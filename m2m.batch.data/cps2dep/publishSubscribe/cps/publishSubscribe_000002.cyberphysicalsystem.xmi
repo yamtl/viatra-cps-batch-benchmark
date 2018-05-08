@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="ASCII"?>
+<cps:CyberPhysicalSystem xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:cps="http://org.eclipse.viatra/model/cps" identifier="testModel31655906715123">
+  <appTypes identifier="simple.cps.app.ServerAppClass0">
+    <instances identifier="simple.cps.app.ServerAppClass0.inst0" allocatedTo="simple.cps.host.server0.inst0"/>
+    <behavior identifier="simple.cps.app.ServerAppClass0.sm0" initial="simple.cps.app.ServerAppClass0.sm0.s0">
+      <states identifier="simple.cps.app.ServerAppClass0.sm0.s0"/>
+      <states identifier="simple.cps.app.ServerAppClass0.sm0.s1">
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s1.t19" targetState="simple.cps.app.ServerAppClass0.sm0.s16" action="sendSignal(simple.cps.app.ClientAppClass6, 1)"/>
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s1.t29" targetState="simple.cps.app.ServerAppClass0.sm0.s13" action="sendSignal(simple.cps.app.ClientAppClass16, 1)"/>
+      </states>
+      <states identifier="simple.cps.app.ServerAppClass0.sm0.s2">
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s2.t28" targetState="simple.cps.app.ServerAppClass0.sm0.s21"/>
+      </states>
+      <states identifier="simple.cps.app.ServerAppClass0.sm0.s3"/>
+      <states identifier="simple.cps.app.ServerAppClass0.sm0.s4">
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s4.t26" targetState="simple.cps.app.ServerAppClass0.sm0.s6" action="sendSignal(simple.cps.app.ClientAppClass8, 1)"/>
+      </states>
+      <states identifier="simple.cps.app.ServerAppClass0.sm0.s5">
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s5.t25" targetState="simple.cps.app.ServerAppClass0.sm0.s22" action="sendSignal(simple.cps.app.ClientAppClass19, 1)"/>
+      </states>
+      <states identifier="simple.cps.app.ServerAppClass0.sm0.s6">
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s6.t7" targetState="simple.cps.app.ServerAppClass0.sm0.s3" action="sendSignal(simple.cps.app.ClientAppClass17, 1)"/>
+      </states>
+      <states identifier="simple.cps.app.ServerAppClass0.sm0.s7"/>
+      <states identifier="simple.cps.app.ServerAppClass0.sm0.s8">
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s8.t17" targetState="simple.cps.app.ServerAppClass0.sm0.s17" action="sendSignal(simple.cps.app.ClientAppClass9, 1)"/>
+      </states>
+      <states identifier="simple.cps.app.ServerAppClass0.sm0.s9">
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s9.t12" targetState="simple.cps.app.ServerAppClass0.sm0.s23" action="sendSignal(simple.cps.app.ClientAppClass13, 1)"/>
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s9.t24" targetState="simple.cps.app.ServerAppClass0.sm0.s23" action="sendSignal(simple.cps.app.ClientAppClass19, 1)"/>
+      </states>
+      <states identifier="simple.cps.app.ServerAppClass0.sm0.s10">
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s10.t27" targetState="simple.cps.app.ServerAppClass0.sm0.s14" action="sendSignal(simple.cps.app.ClientAppClass13, 1)"/>
+      </states>
+      <states identifier="simple.cps.app.ServerAppClass0.sm0.s11">
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s11.t2" targetState="simple.cps.app.ServerAppClass0.sm0.s23" action="sendSignal(simple.cps.app.ClientAppClass18, 1)"/>
+      </states>
+      <states identifier="simple.cps.app.ServerAppClass0.sm0.s12">
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s12.t32" targetState="simple.cps.app.ServerAppClass0.sm0.s19" action="sendSignal(simple.cps.app.ClientAppClass14, 1)"/>
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s12.t34" targetState="simple.cps.app.ServerAppClass0.sm0.s19" action="sendSignal(simple.cps.app.ClientAppClass17, 1)"/>
+      </states>
+      <states identifier="simple.cps.app.ServerAppClass0.sm0.s13"/>
+      <states identifier="simple.cps.app.ServerAppClass0.sm0.s14">
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s14.t30" targetState="simple.cps.app.ServerAppClass0.sm0.s16" action="sendSignal(simple.cps.app.ClientAppClass12, 1)"/>
+      </states>
+      <states identifier="simple.cps.app.ServerAppClass0.sm0.s15">
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s15.t20" targetState="simple.cps.app.ServerAppClass0.sm0.s21" action="sendSignal(simple.cps.app.ClientAppClass8, 1)"/>
+      </states>
+      <states identifier="simple.cps.app.ServerAppClass0.sm0.s16">
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s16.t8" targetState="simple.cps.app.ServerAppClass0.sm0.s13" action="sendSignal(simple.cps.app.ClientAppClass1, 1)"/>
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s16.t35" targetState="simple.cps.app.ServerAppClass0.sm0.s7" action="sendSignal(simple.cps.app.ClientAppClass17, 1)"/>
+      </states>
+      <states identifier="simple.cps.app.ServerAppClass0.sm0.s17">
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s17.t1" targetState="simple.cps.app.ServerAppClass0.sm0.s8" action="sendSignal(simple.cps.app.ClientAppClass0, 1)"/>
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s17.t21" targetState="simple.cps.app.ServerAppClass0.sm0.s23" action="sendSignal(simple.cps.app.ClientAppClass8, 1)"/>
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s17.t23" targetState="simple.cps.app.ServerAppClass0.sm0.s4" action="sendSignal(simple.cps.app.ClientAppClass2, 1)"/>
+      </states>
+      <states identifier="simple.cps.app.ServerAppClass0.sm0.s18"/>
+      <states identifier="simple.cps.app.ServerAppClass0.sm0.s19">
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s19.t0" targetState="simple.cps.app.ServerAppClass0.sm0.s6" action="sendSignal(simple.cps.app.ClientAppClass0, 1)"/>
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s19.t3" targetState="simple.cps.app.ServerAppClass0.sm0.s18" action="sendSignal(simple.cps.app.ClientAppClass13, 1)"/>
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s19.t15" targetState="simple.cps.app.ServerAppClass0.sm0.s21" action="sendSignal(simple.cps.app.ClientAppClass6, 1)"/>
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s19.t16" targetState="simple.cps.app.ServerAppClass0.sm0.s11" action="sendSignal(simple.cps.app.ClientAppClass19, 1)"/>
+      </states>
+      <states identifier="simple.cps.app.ServerAppClass0.sm0.s20">
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s20.t6" targetState="simple.cps.app.ServerAppClass0.sm0.s7" action="sendSignal(simple.cps.app.ClientAppClass5, 1)"/>
+      </states>
+      <states identifier="simple.cps.app.ServerAppClass0.sm0.s21">
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s21.t18" targetState="simple.cps.app.ServerAppClass0.sm0.s11" action="sendSignal(simple.cps.app.ClientAppClass10, 1)"/>
+      </states>
+      <states identifier="simple.cps.app.ServerAppClass0.sm0.s22"/>
+      <states identifier="simple.cps.app.ServerAppClass0.sm0.s23">
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s23.t4" targetState="simple.cps.app.ServerAppClass0.sm0.s12" action="sendSignal(simple.cps.app.ClientAppClass1, 1)"/>
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s23.t33" targetState="simple.cps.app.ServerAppClass0.sm0.s6" action="sendSignal(simple.cps.app.ClientAppClass11, 1)"/>
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s23.t38" targetState="simple.cps.app.ServerAppClass0.sm0.s16" action="sendSignal(simple.cps.app.ClientAppClass16, 1)"/>
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s23.t39" targetState="simple.cps.app.ServerAppClass0.sm0.s15" action="sendSignal(simple.cps.app.ClientAppClass18, 1)"/>
+      </states>
+      <states identifier="simple.cps.app.ServerAppClass0.sm0.s24">
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s24.t9" targetState="simple.cps.app.ServerAppClass0.sm0.s25" action="sendSignal(simple.cps.app.ClientAppClass18, 1)"/>
+      </states>
+      <states identifier="simple.cps.app.ServerAppClass0.sm0.s25">
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s25.t31" targetState="simple.cps.app.ServerAppClass0.sm0.s15" action="sendSignal(simple.cps.app.ClientAppClass13, 1)"/>
+      </states>
+      <states identifier="simple.cps.app.ServerAppClass0.sm0.s26">
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s26.t5" targetState="simple.cps.app.ServerAppClass0.sm0.s9" action="sendSignal(simple.cps.app.ClientAppClass10, 1)"/>
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s26.t10" targetState="simple.cps.app.ServerAppClass0.sm0.s23" action="sendSignal(simple.cps.app.ClientAppClass8, 1)"/>
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s26.t37" targetState="simple.cps.app.ServerAppClass0.sm0.s29" action="sendSignal(simple.cps.app.ClientAppClass8, 1)"/>
+      </states>
+      <states identifier="simple.cps.app.ServerAppClass0.sm0.s27"/>
+      <states identifier="simple.cps.app.ServerAppClass0.sm0.s28">
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s28.t11" targetState="simple.cps.app.ServerAppClass0.sm0.s12" action="sendSignal(simple.cps.app.ClientAppClass16, 1)"/>
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s28.t13" targetState="simple.cps.app.ServerAppClass0.sm0.s16"/>
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s28.t22" targetState="simple.cps.app.ServerAppClass0.sm0.s0"/>
+      </states>
+      <states identifier="simple.cps.app.ServerAppClass0.sm0.s29">
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s29.t14" targetState="simple.cps.app.ServerAppClass0.sm0.s2" action="sendSignal(simple.cps.app.ClientAppClass8, 1)"/>
+        <outgoingTransitions identifier="simple.cps.app.ServerAppClass0.sm0.s29.t36" targetState="simple.cps.app.ServerAppClass0.sm0.s22" action="sendSignal(simple.cps.app.ClientAppClass13, 1)"/>
+      </states>
+    </behavior>
+  </appTypes>
+  <appTypes identifier="simple.cps.app.ClientAppClass0">
+    <instances identifier="simple.cps.app.ClientAppClass0.inst0" allocatedTo="simple.cps.host.client0.inst7"/>
+    <behavior identifier="simple.cps.app.ClientAppClass0.sm0" initial="simple.cps.app.ClientAppClass0.sm0.s0">
+      <states identifier="simple.cps.app.ClientAppClass0.sm0.s0">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass0.sm0.s0.t2" targetState="simple.cps.app.ClientAppClass0.sm0.s2"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass0.sm0.s0.t4" targetState="simple.cps.app.ClientAppClass0.sm0.s1" action="waitForSignal(1)"/>
+      </states>
+      <states identifier="simple.cps.app.ClientAppClass0.sm0.s1"/>
+      <states identifier="simple.cps.app.ClientAppClass0.sm0.s2">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass0.sm0.s2.t0" targetState="simple.cps.app.ClientAppClass0.sm0.s1"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass0.sm0.s2.t1" targetState="simple.cps.app.ClientAppClass0.sm0.s1"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass0.sm0.s2.t3" targetState="simple.cps.app.ClientAppClass0.sm0.s0"/>
+      </states>
+    </behavior>
+  </appTypes>
+  <appTypes identifier="simple.cps.app.ClientAppClass1">
+    <instances identifier="simple.cps.app.ClientAppClass1.inst0" allocatedTo="simple.cps.host.client0.inst3"/>
+    <behavior identifier="simple.cps.app.ClientAppClass1.sm1" initial="simple.cps.app.ClientAppClass1.sm1.s0">
+      <states identifier="simple.cps.app.ClientAppClass1.sm1.s0">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass1.sm1.s0.t0" targetState="simple.cps.app.ClientAppClass1.sm1.s2"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass1.sm1.s0.t2" targetState="simple.cps.app.ClientAppClass1.sm1.s2"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass1.sm1.s0.t3" targetState="simple.cps.app.ClientAppClass1.sm1.s2"/>
+      </states>
+      <states identifier="simple.cps.app.ClientAppClass1.sm1.s1">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass1.sm1.s1.t1" targetState="simple.cps.app.ClientAppClass1.sm1.s0"/>
+      </states>
+      <states identifier="simple.cps.app.ClientAppClass1.sm1.s2">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass1.sm1.s2.t4" targetState="simple.cps.app.ClientAppClass1.sm1.s0" action="waitForSignal(1)"/>
+      </states>
+    </behavior>
+  </appTypes>
+  <appTypes identifier="simple.cps.app.ClientAppClass2">
+    <instances identifier="simple.cps.app.ClientAppClass2.inst0" allocatedTo="simple.cps.host.client0.inst1"/>
+    <behavior identifier="simple.cps.app.ClientAppClass2.sm2" initial="simple.cps.app.ClientAppClass2.sm2.s0">
+      <states identifier="simple.cps.app.ClientAppClass2.sm2.s0">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass2.sm2.s0.t1" targetState="simple.cps.app.ClientAppClass2.sm2.s1" action="waitForSignal(1)"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass2.sm2.s0.t2" targetState="simple.cps.app.ClientAppClass2.sm2.s2"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass2.sm2.s0.t3" targetState="simple.cps.app.ClientAppClass2.sm2.s1"/>
+      </states>
+      <states identifier="simple.cps.app.ClientAppClass2.sm2.s1"/>
+      <states identifier="simple.cps.app.ClientAppClass2.sm2.s2">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass2.sm2.s2.t0" targetState="simple.cps.app.ClientAppClass2.sm2.s1" action="waitForSignal(1)"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass2.sm2.s2.t4" targetState="simple.cps.app.ClientAppClass2.sm2.s0"/>
+      </states>
+    </behavior>
+  </appTypes>
+  <appTypes identifier="simple.cps.app.ClientAppClass3">
+    <instances identifier="simple.cps.app.ClientAppClass3.inst0" allocatedTo="simple.cps.host.client0.inst0"/>
+    <behavior identifier="simple.cps.app.ClientAppClass3.sm3" initial="simple.cps.app.ClientAppClass3.sm3.s0">
+      <states identifier="simple.cps.app.ClientAppClass3.sm3.s0">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass3.sm3.s0.t3" targetState="simple.cps.app.ClientAppClass3.sm3.s2" action="waitForSignal(1)"/>
+      </states>
+      <states identifier="simple.cps.app.ClientAppClass3.sm3.s1">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass3.sm3.s1.t2" targetState="simple.cps.app.ClientAppClass3.sm3.s2"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass3.sm3.s1.t4" targetState="simple.cps.app.ClientAppClass3.sm3.s0"/>
+      </states>
+      <states identifier="simple.cps.app.ClientAppClass3.sm3.s2">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass3.sm3.s2.t0" targetState="simple.cps.app.ClientAppClass3.sm3.s0"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass3.sm3.s2.t1" targetState="simple.cps.app.ClientAppClass3.sm3.s0" action="waitForSignal(1)"/>
+      </states>
+    </behavior>
+  </appTypes>
+  <appTypes identifier="simple.cps.app.ClientAppClass4">
+    <instances identifier="simple.cps.app.ClientAppClass4.inst0" allocatedTo="simple.cps.host.client0.inst9"/>
+    <behavior identifier="simple.cps.app.ClientAppClass4.sm4" initial="simple.cps.app.ClientAppClass4.sm4.s0">
+      <states identifier="simple.cps.app.ClientAppClass4.sm4.s0">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass4.sm4.s0.t1" targetState="simple.cps.app.ClientAppClass4.sm4.s1"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass4.sm4.s0.t2" targetState="simple.cps.app.ClientAppClass4.sm4.s1"/>
+      </states>
+      <states identifier="simple.cps.app.ClientAppClass4.sm4.s1">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass4.sm4.s1.t0" targetState="simple.cps.app.ClientAppClass4.sm4.s0" action="waitForSignal(1)"/>
+      </states>
+      <states identifier="simple.cps.app.ClientAppClass4.sm4.s2">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass4.sm4.s2.t3" targetState="simple.cps.app.ClientAppClass4.sm4.s0" action="waitForSignal(1)"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass4.sm4.s2.t4" targetState="simple.cps.app.ClientAppClass4.sm4.s0"/>
+      </states>
+    </behavior>
+  </appTypes>
+  <appTypes identifier="simple.cps.app.ClientAppClass5">
+    <instances identifier="simple.cps.app.ClientAppClass5.inst0" allocatedTo="simple.cps.host.client0.inst2"/>
+    <behavior identifier="simple.cps.app.ClientAppClass5.sm5" initial="simple.cps.app.ClientAppClass5.sm5.s0">
+      <states identifier="simple.cps.app.ClientAppClass5.sm5.s0">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass5.sm5.s0.t1" targetState="simple.cps.app.ClientAppClass5.sm5.s1"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass5.sm5.s0.t2" targetState="simple.cps.app.ClientAppClass5.sm5.s2"/>
+      </states>
+      <states identifier="simple.cps.app.ClientAppClass5.sm5.s1">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass5.sm5.s1.t0" targetState="simple.cps.app.ClientAppClass5.sm5.s2"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass5.sm5.s1.t4" targetState="simple.cps.app.ClientAppClass5.sm5.s0" action="waitForSignal(1)"/>
+      </states>
+      <states identifier="simple.cps.app.ClientAppClass5.sm5.s2">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass5.sm5.s2.t3" targetState="simple.cps.app.ClientAppClass5.sm5.s0"/>
+      </states>
+    </behavior>
+  </appTypes>
+  <appTypes identifier="simple.cps.app.ClientAppClass6">
+    <instances identifier="simple.cps.app.ClientAppClass6.inst0" allocatedTo="simple.cps.host.client0.inst2"/>
+    <behavior identifier="simple.cps.app.ClientAppClass6.sm6" initial="simple.cps.app.ClientAppClass6.sm6.s0">
+      <states identifier="simple.cps.app.ClientAppClass6.sm6.s0">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass6.sm6.s0.t2" targetState="simple.cps.app.ClientAppClass6.sm6.s2"/>
+      </states>
+      <states identifier="simple.cps.app.ClientAppClass6.sm6.s1">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass6.sm6.s1.t1" targetState="simple.cps.app.ClientAppClass6.sm6.s2"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass6.sm6.s1.t3" targetState="simple.cps.app.ClientAppClass6.sm6.s0" action="waitForSignal(1)"/>
+      </states>
+      <states identifier="simple.cps.app.ClientAppClass6.sm6.s2">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass6.sm6.s2.t0" targetState="simple.cps.app.ClientAppClass6.sm6.s1"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass6.sm6.s2.t4" targetState="simple.cps.app.ClientAppClass6.sm6.s0"/>
+      </states>
+    </behavior>
+  </appTypes>
+  <appTypes identifier="simple.cps.app.ClientAppClass7">
+    <instances identifier="simple.cps.app.ClientAppClass7.inst0" allocatedTo="simple.cps.host.client0.inst3"/>
+    <behavior identifier="simple.cps.app.ClientAppClass7.sm7" initial="simple.cps.app.ClientAppClass7.sm7.s0">
+      <states identifier="simple.cps.app.ClientAppClass7.sm7.s0"/>
+      <states identifier="simple.cps.app.ClientAppClass7.sm7.s1">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass7.sm7.s1.t0" targetState="simple.cps.app.ClientAppClass7.sm7.s2"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass7.sm7.s1.t1" targetState="simple.cps.app.ClientAppClass7.sm7.s0" action="waitForSignal(1)"/>
+      </states>
+      <states identifier="simple.cps.app.ClientAppClass7.sm7.s2">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass7.sm7.s2.t2" targetState="simple.cps.app.ClientAppClass7.sm7.s0"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass7.sm7.s2.t3" targetState="simple.cps.app.ClientAppClass7.sm7.s0" action="waitForSignal(1)"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass7.sm7.s2.t4" targetState="simple.cps.app.ClientAppClass7.sm7.s1"/>
+      </states>
+    </behavior>
+  </appTypes>
+  <appTypes identifier="simple.cps.app.ClientAppClass8">
+    <instances identifier="simple.cps.app.ClientAppClass8.inst0" allocatedTo="simple.cps.host.client0.inst2"/>
+    <behavior identifier="simple.cps.app.ClientAppClass8.sm8" initial="simple.cps.app.ClientAppClass8.sm8.s0">
+      <states identifier="simple.cps.app.ClientAppClass8.sm8.s0">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass8.sm8.s0.t0" targetState="simple.cps.app.ClientAppClass8.sm8.s2"/>
+      </states>
+      <states identifier="simple.cps.app.ClientAppClass8.sm8.s1">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass8.sm8.s1.t1" targetState="simple.cps.app.ClientAppClass8.sm8.s2"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass8.sm8.s1.t3" targetState="simple.cps.app.ClientAppClass8.sm8.s0"/>
+      </states>
+      <states identifier="simple.cps.app.ClientAppClass8.sm8.s2">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass8.sm8.s2.t2" targetState="simple.cps.app.ClientAppClass8.sm8.s0" action="waitForSignal(1)"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass8.sm8.s2.t4" targetState="simple.cps.app.ClientAppClass8.sm8.s0"/>
+      </states>
+    </behavior>
+  </appTypes>
+  <appTypes identifier="simple.cps.app.ClientAppClass9">
+    <instances identifier="simple.cps.app.ClientAppClass9.inst0" allocatedTo="simple.cps.host.client0.inst8"/>
+    <behavior identifier="simple.cps.app.ClientAppClass9.sm9" initial="simple.cps.app.ClientAppClass9.sm9.s0">
+      <states identifier="simple.cps.app.ClientAppClass9.sm9.s0">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass9.sm9.s0.t1" targetState="simple.cps.app.ClientAppClass9.sm9.s1" action="waitForSignal(1)"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass9.sm9.s0.t3" targetState="simple.cps.app.ClientAppClass9.sm9.s1" action="waitForSignal(1)"/>
+      </states>
+      <states identifier="simple.cps.app.ClientAppClass9.sm9.s1">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass9.sm9.s1.t2" targetState="simple.cps.app.ClientAppClass9.sm9.s0" action="waitForSignal(1)"/>
+      </states>
+      <states identifier="simple.cps.app.ClientAppClass9.sm9.s2">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass9.sm9.s2.t0" targetState="simple.cps.app.ClientAppClass9.sm9.s1"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass9.sm9.s2.t4" targetState="simple.cps.app.ClientAppClass9.sm9.s1" action="waitForSignal(1)"/>
+      </states>
+    </behavior>
+  </appTypes>
+  <appTypes identifier="simple.cps.app.ClientAppClass10">
+    <instances identifier="simple.cps.app.ClientAppClass10.inst0" allocatedTo="simple.cps.host.client0.inst3"/>
+    <behavior identifier="simple.cps.app.ClientAppClass10.sm10" initial="simple.cps.app.ClientAppClass10.sm10.s0">
+      <states identifier="simple.cps.app.ClientAppClass10.sm10.s0">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass10.sm10.s0.t0" targetState="simple.cps.app.ClientAppClass10.sm10.s1" action="waitForSignal(1)"/>
+      </states>
+      <states identifier="simple.cps.app.ClientAppClass10.sm10.s1">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass10.sm10.s1.t1" targetState="simple.cps.app.ClientAppClass10.sm10.s2"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass10.sm10.s1.t2" targetState="simple.cps.app.ClientAppClass10.sm10.s0"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass10.sm10.s1.t4" targetState="simple.cps.app.ClientAppClass10.sm10.s2"/>
+      </states>
+      <states identifier="simple.cps.app.ClientAppClass10.sm10.s2">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass10.sm10.s2.t3" targetState="simple.cps.app.ClientAppClass10.sm10.s1"/>
+      </states>
+    </behavior>
+  </appTypes>
+  <appTypes identifier="simple.cps.app.ClientAppClass11">
+    <instances identifier="simple.cps.app.ClientAppClass11.inst0" allocatedTo="simple.cps.host.client0.inst8"/>
+    <behavior identifier="simple.cps.app.ClientAppClass11.sm11" initial="simple.cps.app.ClientAppClass11.sm11.s0">
+      <states identifier="simple.cps.app.ClientAppClass11.sm11.s0">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass11.sm11.s0.t0" targetState="simple.cps.app.ClientAppClass11.sm11.s2"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass11.sm11.s0.t4" targetState="simple.cps.app.ClientAppClass11.sm11.s1"/>
+      </states>
+      <states identifier="simple.cps.app.ClientAppClass11.sm11.s1"/>
+      <states identifier="simple.cps.app.ClientAppClass11.sm11.s2">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass11.sm11.s2.t1" targetState="simple.cps.app.ClientAppClass11.sm11.s0"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass11.sm11.s2.t2" targetState="simple.cps.app.ClientAppClass11.sm11.s0" action="waitForSignal(1)"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass11.sm11.s2.t3" targetState="simple.cps.app.ClientAppClass11.sm11.s1"/>
+      </states>
+    </behavior>
+  </appTypes>
+  <appTypes identifier="simple.cps.app.ClientAppClass12">
+    <instances identifier="simple.cps.app.ClientAppClass12.inst0" allocatedTo="simple.cps.host.client0.inst3"/>
+    <behavior identifier="simple.cps.app.ClientAppClass12.sm12" initial="simple.cps.app.ClientAppClass12.sm12.s0">
+      <states identifier="simple.cps.app.ClientAppClass12.sm12.s0"/>
+      <states identifier="simple.cps.app.ClientAppClass12.sm12.s1">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass12.sm12.s1.t0" targetState="simple.cps.app.ClientAppClass12.sm12.s0"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass12.sm12.s1.t1" targetState="simple.cps.app.ClientAppClass12.sm12.s0"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass12.sm12.s1.t4" targetState="simple.cps.app.ClientAppClass12.sm12.s2"/>
+      </states>
+      <states identifier="simple.cps.app.ClientAppClass12.sm12.s2">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass12.sm12.s2.t2" targetState="simple.cps.app.ClientAppClass12.sm12.s1"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass12.sm12.s2.t3" targetState="simple.cps.app.ClientAppClass12.sm12.s0"/>
+      </states>
+    </behavior>
+  </appTypes>
+  <appTypes identifier="simple.cps.app.ClientAppClass13">
+    <instances identifier="simple.cps.app.ClientAppClass13.inst0" allocatedTo="simple.cps.host.client0.inst6"/>
+    <behavior identifier="simple.cps.app.ClientAppClass13.sm13" initial="simple.cps.app.ClientAppClass13.sm13.s0">
+      <states identifier="simple.cps.app.ClientAppClass13.sm13.s0">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass13.sm13.s0.t1" targetState="simple.cps.app.ClientAppClass13.sm13.s1"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass13.sm13.s0.t2" targetState="simple.cps.app.ClientAppClass13.sm13.s2"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass13.sm13.s0.t3" targetState="simple.cps.app.ClientAppClass13.sm13.s2"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass13.sm13.s0.t4" targetState="simple.cps.app.ClientAppClass13.sm13.s1" action="waitForSignal(1)"/>
+      </states>
+      <states identifier="simple.cps.app.ClientAppClass13.sm13.s1"/>
+      <states identifier="simple.cps.app.ClientAppClass13.sm13.s2">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass13.sm13.s2.t0" targetState="simple.cps.app.ClientAppClass13.sm13.s1" action="waitForSignal(1)"/>
+      </states>
+    </behavior>
+  </appTypes>
+  <appTypes identifier="simple.cps.app.ClientAppClass14">
+    <instances identifier="simple.cps.app.ClientAppClass14.inst0" allocatedTo="simple.cps.host.client0.inst0"/>
+    <behavior identifier="simple.cps.app.ClientAppClass14.sm14" initial="simple.cps.app.ClientAppClass14.sm14.s0">
+      <states identifier="simple.cps.app.ClientAppClass14.sm14.s0">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass14.sm14.s0.t2" targetState="simple.cps.app.ClientAppClass14.sm14.s2"/>
+      </states>
+      <states identifier="simple.cps.app.ClientAppClass14.sm14.s1">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass14.sm14.s1.t0" targetState="simple.cps.app.ClientAppClass14.sm14.s0"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass14.sm14.s1.t3" targetState="simple.cps.app.ClientAppClass14.sm14.s2"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass14.sm14.s1.t4" targetState="simple.cps.app.ClientAppClass14.sm14.s0"/>
+      </states>
+      <states identifier="simple.cps.app.ClientAppClass14.sm14.s2">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass14.sm14.s2.t1" targetState="simple.cps.app.ClientAppClass14.sm14.s1"/>
+      </states>
+    </behavior>
+  </appTypes>
+  <appTypes identifier="simple.cps.app.ClientAppClass15">
+    <instances identifier="simple.cps.app.ClientAppClass15.inst0" allocatedTo="simple.cps.host.client0.inst5"/>
+    <behavior identifier="simple.cps.app.ClientAppClass15.sm15" initial="simple.cps.app.ClientAppClass15.sm15.s0">
+      <states identifier="simple.cps.app.ClientAppClass15.sm15.s0">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass15.sm15.s0.t2" targetState="simple.cps.app.ClientAppClass15.sm15.s2"/>
+      </states>
+      <states identifier="simple.cps.app.ClientAppClass15.sm15.s1">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass15.sm15.s1.t0" targetState="simple.cps.app.ClientAppClass15.sm15.s0" action="waitForSignal(1)"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass15.sm15.s1.t4" targetState="simple.cps.app.ClientAppClass15.sm15.s2" action="waitForSignal(1)"/>
+      </states>
+      <states identifier="simple.cps.app.ClientAppClass15.sm15.s2">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass15.sm15.s2.t1" targetState="simple.cps.app.ClientAppClass15.sm15.s1"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass15.sm15.s2.t3" targetState="simple.cps.app.ClientAppClass15.sm15.s1"/>
+      </states>
+    </behavior>
+  </appTypes>
+  <appTypes identifier="simple.cps.app.ClientAppClass16">
+    <instances identifier="simple.cps.app.ClientAppClass16.inst0" allocatedTo="simple.cps.host.client0.inst1"/>
+    <behavior identifier="simple.cps.app.ClientAppClass16.sm16" initial="simple.cps.app.ClientAppClass16.sm16.s0">
+      <states identifier="simple.cps.app.ClientAppClass16.sm16.s0">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass16.sm16.s0.t2" targetState="simple.cps.app.ClientAppClass16.sm16.s1"/>
+      </states>
+      <states identifier="simple.cps.app.ClientAppClass16.sm16.s1">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass16.sm16.s1.t1" targetState="simple.cps.app.ClientAppClass16.sm16.s0" action="waitForSignal(1)"/>
+      </states>
+      <states identifier="simple.cps.app.ClientAppClass16.sm16.s2">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass16.sm16.s2.t0" targetState="simple.cps.app.ClientAppClass16.sm16.s1"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass16.sm16.s2.t3" targetState="simple.cps.app.ClientAppClass16.sm16.s0"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass16.sm16.s2.t4" targetState="simple.cps.app.ClientAppClass16.sm16.s1" action="waitForSignal(1)"/>
+      </states>
+    </behavior>
+  </appTypes>
+  <appTypes identifier="simple.cps.app.ClientAppClass17">
+    <instances identifier="simple.cps.app.ClientAppClass17.inst0" allocatedTo="simple.cps.host.client0.inst5"/>
+    <behavior identifier="simple.cps.app.ClientAppClass17.sm17" initial="simple.cps.app.ClientAppClass17.sm17.s0">
+      <states identifier="simple.cps.app.ClientAppClass17.sm17.s0">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass17.sm17.s0.t0" targetState="simple.cps.app.ClientAppClass17.sm17.s1" action="waitForSignal(1)"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass17.sm17.s0.t1" targetState="simple.cps.app.ClientAppClass17.sm17.s2" action="waitForSignal(1)"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass17.sm17.s0.t2" targetState="simple.cps.app.ClientAppClass17.sm17.s1"/>
+      </states>
+      <states identifier="simple.cps.app.ClientAppClass17.sm17.s1">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass17.sm17.s1.t4" targetState="simple.cps.app.ClientAppClass17.sm17.s0"/>
+      </states>
+      <states identifier="simple.cps.app.ClientAppClass17.sm17.s2">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass17.sm17.s2.t3" targetState="simple.cps.app.ClientAppClass17.sm17.s0" action="waitForSignal(1)"/>
+      </states>
+    </behavior>
+  </appTypes>
+  <appTypes identifier="simple.cps.app.ClientAppClass18">
+    <instances identifier="simple.cps.app.ClientAppClass18.inst0" allocatedTo="simple.cps.host.client0.inst9"/>
+    <behavior identifier="simple.cps.app.ClientAppClass18.sm18" initial="simple.cps.app.ClientAppClass18.sm18.s0">
+      <states identifier="simple.cps.app.ClientAppClass18.sm18.s0">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass18.sm18.s0.t1" targetState="simple.cps.app.ClientAppClass18.sm18.s2"/>
+      </states>
+      <states identifier="simple.cps.app.ClientAppClass18.sm18.s1">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass18.sm18.s1.t0" targetState="simple.cps.app.ClientAppClass18.sm18.s0" action="waitForSignal(1)"/>
+      </states>
+      <states identifier="simple.cps.app.ClientAppClass18.sm18.s2">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass18.sm18.s2.t2" targetState="simple.cps.app.ClientAppClass18.sm18.s1" action="waitForSignal(1)"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass18.sm18.s2.t3" targetState="simple.cps.app.ClientAppClass18.sm18.s1"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass18.sm18.s2.t4" targetState="simple.cps.app.ClientAppClass18.sm18.s0"/>
+      </states>
+    </behavior>
+  </appTypes>
+  <appTypes identifier="simple.cps.app.ClientAppClass19">
+    <instances identifier="simple.cps.app.ClientAppClass19.inst0" allocatedTo="simple.cps.host.client0.inst1"/>
+    <behavior identifier="simple.cps.app.ClientAppClass19.sm19" initial="simple.cps.app.ClientAppClass19.sm19.s0">
+      <states identifier="simple.cps.app.ClientAppClass19.sm19.s0">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass19.sm19.s0.t0" targetState="simple.cps.app.ClientAppClass19.sm19.s1"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass19.sm19.s0.t4" targetState="simple.cps.app.ClientAppClass19.sm19.s2"/>
+      </states>
+      <states identifier="simple.cps.app.ClientAppClass19.sm19.s1">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass19.sm19.s1.t2" targetState="simple.cps.app.ClientAppClass19.sm19.s2"/>
+      </states>
+      <states identifier="simple.cps.app.ClientAppClass19.sm19.s2">
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass19.sm19.s2.t1" targetState="simple.cps.app.ClientAppClass19.sm19.s1"/>
+        <outgoingTransitions identifier="simple.cps.app.ClientAppClass19.sm19.s2.t3" targetState="simple.cps.app.ClientAppClass19.sm19.s0" action="waitForSignal(1)"/>
+      </states>
+    </behavior>
+  </appTypes>
+  <hostTypes identifier="simple.cps.host.server0">
+    <instances identifier="simple.cps.host.server0.inst0" nodeIp="simple.cps.host.server0.inst0" applications="simple.cps.app.ServerAppClass0.inst0" communicateWith="simple.cps.host.client0.inst0 simple.cps.host.client0.inst5 simple.cps.host.client0.inst6 simple.cps.host.client0.inst2 simple.cps.host.client0.inst1 simple.cps.host.client0.inst7 simple.cps.host.client0.inst3 simple.cps.host.client0.inst8 simple.cps.host.client0.inst9 simple.cps.host.client0.inst4"/>
+  </hostTypes>
+  <hostTypes identifier="simple.cps.host.client0">
+    <instances identifier="simple.cps.host.client0.inst0" nodeIp="simple.cps.host.client0.inst0" applications="simple.cps.app.ClientAppClass3.inst0 simple.cps.app.ClientAppClass14.inst0"/>
+    <instances identifier="simple.cps.host.client0.inst1" nodeIp="simple.cps.host.client0.inst1" applications="simple.cps.app.ClientAppClass2.inst0 simple.cps.app.ClientAppClass16.inst0 simple.cps.app.ClientAppClass19.inst0"/>
+    <instances identifier="simple.cps.host.client0.inst2" nodeIp="simple.cps.host.client0.inst2" applications="simple.cps.app.ClientAppClass6.inst0 simple.cps.app.ClientAppClass5.inst0 simple.cps.app.ClientAppClass8.inst0"/>
+    <instances identifier="simple.cps.host.client0.inst3" nodeIp="simple.cps.host.client0.inst3" applications="simple.cps.app.ClientAppClass1.inst0 simple.cps.app.ClientAppClass10.inst0 simple.cps.app.ClientAppClass12.inst0 simple.cps.app.ClientAppClass7.inst0"/>
+    <instances identifier="simple.cps.host.client0.inst4" nodeIp="simple.cps.host.client0.inst4"/>
+    <instances identifier="simple.cps.host.client0.inst5" nodeIp="simple.cps.host.client0.inst5" applications="simple.cps.app.ClientAppClass17.inst0 simple.cps.app.ClientAppClass15.inst0"/>
+    <instances identifier="simple.cps.host.client0.inst6" nodeIp="simple.cps.host.client0.inst6" applications="simple.cps.app.ClientAppClass13.inst0"/>
+    <instances identifier="simple.cps.host.client0.inst7" nodeIp="simple.cps.host.client0.inst7" applications="simple.cps.app.ClientAppClass0.inst0"/>
+    <instances identifier="simple.cps.host.client0.inst8" nodeIp="simple.cps.host.client0.inst8" applications="simple.cps.app.ClientAppClass11.inst0 simple.cps.app.ClientAppClass9.inst0"/>
+    <instances identifier="simple.cps.host.client0.inst9" nodeIp="simple.cps.host.client0.inst9" applications="simple.cps.app.ClientAppClass18.inst0 simple.cps.app.ClientAppClass4.inst0"/>
+  </hostTypes>
+</cps:CyberPhysicalSystem>

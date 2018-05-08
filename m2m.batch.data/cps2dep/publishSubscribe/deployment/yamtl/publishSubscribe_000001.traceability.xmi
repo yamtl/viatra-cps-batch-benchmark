@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<cpstraceability:CPSToDeployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cps="http://org.eclipse.viatra/model/cps" xmlns:cpstraceability="http://org.eclipse.viatra/model/cps-traceability" xmlns:deployment="http://org.eclipse.viatra/model/deployment">
+  <cps href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#testModel31655105527917"/>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s0"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@states.0"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s13"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@states.13"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s16.t8"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.15"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s7"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@states.7"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass5.sm5.s0.t2"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.3/@behavior/@transitions.1"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass5.sm5.s0"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.3/@behavior/@states.0"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass5.sm5.s2.t3"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.3/@behavior/@transitions.4"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass5.sm5.s2"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.3/@behavior/@states.2"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass5.sm5.s1.t0"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.3/@behavior/@transitions.2"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass5.sm5.s1.t4"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.3/@behavior/@transitions.3"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass5.sm5.s1"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.3/@behavior/@states.1"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass5.sm5.s0.t1"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.3/@behavior/@transitions.0"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s16.t35"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.16"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s16"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@states.16"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass9.sm9.s1"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.2/@behavior/@states.1"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass9.sm9.s0.t1"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.2/@behavior/@transitions.0"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass9.sm9.s0.t3"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.2/@behavior/@transitions.1"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass9.sm9.s0"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.2/@behavior/@states.0"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass9.sm9.s1.t2"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.2/@behavior/@transitions.2"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass9.sm9.s2.t0"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.2/@behavior/@transitions.3"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s1.t19"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.0"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass8.sm8.s2.t4"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.6/@applications.0/@behavior/@transitions.4"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass8.sm8.s2"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.6/@applications.0/@behavior/@states.2"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass8.sm8.s0.t0"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.6/@applications.0/@behavior/@transitions.0"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass8.sm8.s0"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.6/@applications.0/@behavior/@states.0"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass8.sm8.s2.t2"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.6/@applications.0/@behavior/@transitions.3"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s1.t29"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.1"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s1"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@states.1"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s3"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@states.3"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s6.t7"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.5"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s6"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@states.6"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s19.t0"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.20"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s18"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@states.18"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass6.sm6.s1.t1"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.4/@applications.1/@behavior/@transitions.1"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass6.sm6.s0"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.4/@applications.1/@behavior/@states.0"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass6.sm6.s1.t3"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.4/@applications.1/@behavior/@transitions.2"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass6.sm6.s1"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.4/@applications.1/@behavior/@states.1"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass6.sm6.s2.t0"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.4/@applications.1/@behavior/@transitions.3"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass6.sm6.s2.t4"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.4/@applications.1/@behavior/@transitions.4"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass6.sm6.s2"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.4/@applications.1/@behavior/@states.2"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass6.sm6.s0.t2"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.4/@applications.1/@behavior/@transitions.0"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s19.t3"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.21"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s19.t15"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.22"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s19.t16"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.23"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s19"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@states.19"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s12.t32"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.11"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass7.sm7.s0"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.1/@behavior/@states.0"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass7.sm7.s1.t1"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.1/@behavior/@transitions.1"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass7.sm7.s2.t3"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.1/@behavior/@transitions.3"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s12.t34"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.12"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s12"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@states.12"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s23.t4"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.26"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s23.t33"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.27"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s23.t38"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.28"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s15.t20"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.14"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s15"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@states.15"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s23.t39"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.29"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s23"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@states.23"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s11.t2"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.10"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s11"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@states.11"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s21.t18"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.25"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s21"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@states.21"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass1.sm1.s0.t2"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.4/@applications.0/@behavior/@transitions.1"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass1.sm1.s0.t3"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.4/@applications.0/@behavior/@transitions.2"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass1.sm1.s0"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.4/@applications.0/@behavior/@states.0"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass1.sm1.s2.t4"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.4/@applications.0/@behavior/@transitions.4"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass1.sm1.s2"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.4/@applications.0/@behavior/@states.2"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass1.sm1.s0.t0"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.4/@applications.0/@behavior/@transitions.0"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass1.sm1.s1.t1"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.4/@applications.0/@behavior/@transitions.3"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s2.t28"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.2"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s2"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@states.2"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s4.t26"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.3"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s4"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@states.4"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s22"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@states.22"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s5.t25"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.4"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s5"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@states.5"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s17.t1"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.17"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s17.t21"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.18"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s17.t23"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.19"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s17"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@states.17"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s8.t17"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.6"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s8"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@states.8"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s9.t12"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.7"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s9.t24"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.8"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s9"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@states.9"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s14.t30"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.13"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s14"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@states.14"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s10.t27"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.9"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s10"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@states.10"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s20.t6"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.24"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s20"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@states.20"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s25.t31"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.31"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s25"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@states.25"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s24.t9"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.30"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s24"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@states.24"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s26.t5"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.32"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s26.t10"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.33"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s29.t14"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.38"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s29.t36"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.39"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s29"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@states.29"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s26.t37"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.34"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s26"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@states.26"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s27"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@states.27"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s28.t11"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.35"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s28.t13"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.36"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s28.t22"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@transitions.37"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0.s28"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior/@states.28"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:StateMachine" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.sm0"/>
+    <deploymentElements xsi:type="deployment:DeploymentBehavior" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0/@behavior"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:ApplicationInstance" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ServerAppClass0.inst0"/>
+    <deploymentElements xsi:type="deployment:DeploymentApplication" href="publishSubscribe-000001.deployment.xmi#//@hosts.0/@applications.0"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:HostInstance" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.host.server0.inst0"/>
+    <deploymentElements xsi:type="deployment:DeploymentHost" href="publishSubscribe-000001.deployment.xmi#simple.cps.host.server0.inst0"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:HostInstance" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.host.client0.inst0"/>
+    <deploymentElements xsi:type="deployment:DeploymentHost" href="publishSubscribe-000001.deployment.xmi#simple.cps.host.client0.inst0"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:HostInstance" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.host.client0.inst1"/>
+    <deploymentElements xsi:type="deployment:DeploymentHost" href="publishSubscribe-000001.deployment.xmi#simple.cps.host.client0.inst1"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass4.sm4.s1.t0"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.3/@applications.0/@behavior/@transitions.2"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass4.sm4.s1"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.3/@applications.0/@behavior/@states.1"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass4.sm4.s0.t1"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.3/@applications.0/@behavior/@transitions.0"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass4.sm4.s0.t2"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.3/@applications.0/@behavior/@transitions.1"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass4.sm4.s0"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.3/@applications.0/@behavior/@states.0"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass4.sm4.s2.t3"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.3/@applications.0/@behavior/@transitions.3"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass4.sm4.s2.t4"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.3/@applications.0/@behavior/@transitions.4"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass4.sm4.s2"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.3/@applications.0/@behavior/@states.2"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:StateMachine" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass4.sm4"/>
+    <deploymentElements xsi:type="deployment:DeploymentBehavior" href="publishSubscribe-000001.deployment.xmi#//@hosts.3/@applications.0/@behavior"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:ApplicationInstance" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass4.inst0"/>
+    <deploymentElements xsi:type="deployment:DeploymentApplication" href="publishSubscribe-000001.deployment.xmi#//@hosts.3/@applications.0"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:HostInstance" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.host.client0.inst2"/>
+    <deploymentElements xsi:type="deployment:DeploymentHost" href="publishSubscribe-000001.deployment.xmi#simple.cps.host.client0.inst2"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass1.sm1.s1"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.4/@applications.0/@behavior/@states.1"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:StateMachine" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass1.sm1"/>
+    <deploymentElements xsi:type="deployment:DeploymentBehavior" href="publishSubscribe-000001.deployment.xmi#//@hosts.4/@applications.0/@behavior"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:ApplicationInstance" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass1.inst0"/>
+    <deploymentElements xsi:type="deployment:DeploymentApplication" href="publishSubscribe-000001.deployment.xmi#//@hosts.4/@applications.0"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:StateMachine" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass6.sm6"/>
+    <deploymentElements xsi:type="deployment:DeploymentBehavior" href="publishSubscribe-000001.deployment.xmi#//@hosts.4/@applications.1/@behavior"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:ApplicationInstance" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass6.inst0"/>
+    <deploymentElements xsi:type="deployment:DeploymentApplication" href="publishSubscribe-000001.deployment.xmi#//@hosts.4/@applications.1"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:HostInstance" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.host.client0.inst3"/>
+    <deploymentElements xsi:type="deployment:DeploymentHost" href="publishSubscribe-000001.deployment.xmi#simple.cps.host.client0.inst3"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass2.sm2.s1"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.5/@applications.0/@behavior/@states.1"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass2.sm2.s0.t1"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.5/@applications.0/@behavior/@transitions.0"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass2.sm2.s2.t0"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.5/@applications.0/@behavior/@transitions.3"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass2.sm2.s2.t4"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.5/@applications.0/@behavior/@transitions.4"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass2.sm2.s2"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.5/@applications.0/@behavior/@states.2"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass2.sm2.s0.t2"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.5/@applications.0/@behavior/@transitions.1"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass2.sm2.s0.t3"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.5/@applications.0/@behavior/@transitions.2"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass2.sm2.s0"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.5/@applications.0/@behavior/@states.0"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:StateMachine" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass2.sm2"/>
+    <deploymentElements xsi:type="deployment:DeploymentBehavior" href="publishSubscribe-000001.deployment.xmi#//@hosts.5/@applications.0/@behavior"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:ApplicationInstance" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass2.inst0"/>
+    <deploymentElements xsi:type="deployment:DeploymentApplication" href="publishSubscribe-000001.deployment.xmi#//@hosts.5/@applications.0"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass0.sm0.s1"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.5/@applications.1/@behavior/@states.1"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass0.sm0.s2.t0"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.5/@applications.1/@behavior/@transitions.2"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass0.sm0.s2.t1"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.5/@applications.1/@behavior/@transitions.3"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass0.sm0.s2.t3"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.5/@applications.1/@behavior/@transitions.4"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass0.sm0.s2"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.5/@applications.1/@behavior/@states.2"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass0.sm0.s0.t2"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.5/@applications.1/@behavior/@transitions.0"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass0.sm0.s0.t4"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.5/@applications.1/@behavior/@transitions.1"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass0.sm0.s0"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.5/@applications.1/@behavior/@states.0"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:StateMachine" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass0.sm0"/>
+    <deploymentElements xsi:type="deployment:DeploymentBehavior" href="publishSubscribe-000001.deployment.xmi#//@hosts.5/@applications.1/@behavior"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:ApplicationInstance" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass0.inst0"/>
+    <deploymentElements xsi:type="deployment:DeploymentApplication" href="publishSubscribe-000001.deployment.xmi#//@hosts.5/@applications.1"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:HostInstance" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.host.client0.inst4"/>
+    <deploymentElements xsi:type="deployment:DeploymentHost" href="publishSubscribe-000001.deployment.xmi#simple.cps.host.client0.inst4"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass8.sm8.s1.t1"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.6/@applications.0/@behavior/@transitions.1"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass8.sm8.s1.t3"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.6/@applications.0/@behavior/@transitions.2"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass8.sm8.s1"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.6/@applications.0/@behavior/@states.1"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:StateMachine" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass8.sm8"/>
+    <deploymentElements xsi:type="deployment:DeploymentBehavior" href="publishSubscribe-000001.deployment.xmi#//@hosts.6/@applications.0/@behavior"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:ApplicationInstance" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass8.inst0"/>
+    <deploymentElements xsi:type="deployment:DeploymentApplication" href="publishSubscribe-000001.deployment.xmi#//@hosts.6/@applications.0"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:HostInstance" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.host.client0.inst5"/>
+    <deploymentElements xsi:type="deployment:DeploymentHost" href="publishSubscribe-000001.deployment.xmi#simple.cps.host.client0.inst5"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:HostInstance" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.host.client0.inst6"/>
+    <deploymentElements xsi:type="deployment:DeploymentHost" href="publishSubscribe-000001.deployment.xmi#simple.cps.host.client0.inst6"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:HostInstance" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.host.client0.inst7"/>
+    <deploymentElements xsi:type="deployment:DeploymentHost" href="publishSubscribe-000001.deployment.xmi#simple.cps.host.client0.inst7"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass3.sm3.s2.t0"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.0/@behavior/@transitions.3"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass3.sm3.s2.t1"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.0/@behavior/@transitions.4"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass3.sm3.s2"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.0/@behavior/@states.2"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass3.sm3.s0.t3"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.0/@behavior/@transitions.0"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass3.sm3.s0"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.0/@behavior/@states.0"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass3.sm3.s1.t2"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.0/@behavior/@transitions.1"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass3.sm3.s1.t4"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.0/@behavior/@transitions.2"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass3.sm3.s1"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.0/@behavior/@states.1"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:StateMachine" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass3.sm3"/>
+    <deploymentElements xsi:type="deployment:DeploymentBehavior" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.0/@behavior"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:ApplicationInstance" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass3.inst0"/>
+    <deploymentElements xsi:type="deployment:DeploymentApplication" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.0"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass7.sm7.s2.t2"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.1/@behavior/@transitions.2"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass7.sm7.s2.t4"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.1/@behavior/@transitions.4"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass7.sm7.s2"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.1/@behavior/@states.2"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass7.sm7.s1.t0"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.1/@behavior/@transitions.0"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass7.sm7.s1"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.1/@behavior/@states.1"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:StateMachine" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass7.sm7"/>
+    <deploymentElements xsi:type="deployment:DeploymentBehavior" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.1/@behavior"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:ApplicationInstance" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass7.inst0"/>
+    <deploymentElements xsi:type="deployment:DeploymentApplication" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.1"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:Transition" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass9.sm9.s2.t4"/>
+    <deploymentElements xsi:type="deployment:BehaviorTransition" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.2/@behavior/@transitions.4"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:State" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass9.sm9.s2"/>
+    <deploymentElements xsi:type="deployment:BehaviorState" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.2/@behavior/@states.2"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:StateMachine" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass9.sm9"/>
+    <deploymentElements xsi:type="deployment:DeploymentBehavior" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.2/@behavior"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:ApplicationInstance" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass9.inst0"/>
+    <deploymentElements xsi:type="deployment:DeploymentApplication" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.2"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:StateMachine" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass5.sm5"/>
+    <deploymentElements xsi:type="deployment:DeploymentBehavior" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.3/@behavior"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:ApplicationInstance" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.app.ClientAppClass5.inst0"/>
+    <deploymentElements xsi:type="deployment:DeploymentApplication" href="publishSubscribe-000001.deployment.xmi#//@hosts.9/@applications.3"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:HostInstance" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.host.client0.inst8"/>
+    <deploymentElements xsi:type="deployment:DeploymentHost" href="publishSubscribe-000001.deployment.xmi#simple.cps.host.client0.inst8"/>
+  </traces>
+  <traces>
+    <cpsElements xsi:type="cps:HostInstance" href="../../cps/publishSubscribe_000001.cyberphysicalsystem.xmi#simple.cps.host.client0.inst9"/>
+    <deploymentElements xsi:type="deployment:DeploymentHost" href="publishSubscribe-000001.deployment.xmi#simple.cps.host.client0.inst9"/>
+  </traces>
+</cpstraceability:CPSToDeployment>

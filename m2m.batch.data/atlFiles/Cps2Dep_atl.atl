@@ -1,0 +1,131 @@
+-- @atlcompiler atl2010
+--- -- @nsURI CPS=http://org.eclipse.viatra/model/cps
+--- -- @nsURI DEP=http://org.eclipse.viatra/model/deployment
+-- @path CPS=/m2m.batch.data/cps2dep/model/model.ecore
+-- @path DEP=/m2m.batch.data/cps2dep/model/deployment.ecore
+module Cps2Dep;
+create OUT : DEP from IN : CPS;
+
+helper def: rootCps : CPS!CyberPhysicalSystem =
+	CPS!CyberPhysicalSystem.allInstances()->first();
+
+helper def: waitingTransitions : Sequence(CPS!Transition) =
+	CPS!Transition.allInstances()
+	->reject(targetTransition | targetTransition.action.oclIsUndefined())
+	->select(targetTransition | thisModule.isWaitSignal(targetTransition.action));
+	
+helper def: isSignal(action: String) : Boolean =
+	action.startsWith('sendSignal');
+
+helper def: isWaitSignal(action: String) : Boolean =
+	action.startsWith('waitForSignal');
+
+helper def: isWaitSignal_withSignal(action: String, signalId: String) : Boolean =
+	action = 'waitForSignal(' + signalId + ')';
+
+helper def: getAppTypeId(action: String) : String =
+	let contents : Sequence(String) = action.substring(action.indexOf('(')+1,action.lastIndexOf(')')-1).split(',') in
+	contents.at(1).trim();
+
+helper def: getSignalId(action: String) : String =
+	let contents : Sequence(String) = action.substring(action.indexOf('(')+1,action.lastIndexOf(')')-1).split(',') in
+	contents.at(2).trim();
+
+helper context CPS!Transition def: belongsToApplicationType(appTypeId : String) : Boolean =
+	let appType : CPS!ApplicationType = self.refImmediateComposite().refImmediateComposite().refImmediateComposite() in
+	appType.identifier = appTypeId;
+
+helper context CPS!Transition def: applicationInstance : CPS!ApplicationInstance =
+	let appType : CPS!ApplicationType = self.refImmediateComposite().refImmediateComposite().refImmediateComposite() in
+	appType.instances.at(1);
+
+helper context CPS!HostInstance def: reaches(server: CPS!HostInstance, visited : Set(String)) : Boolean =
+	if (not visited->exists(id | self.identifier=id)) then
+		if (self.communicateWith->collect(bridge| bridge.identifier)->exists(id | server.identifier=id)) then
+			true
+		else
+			let updatedVisited: Set(String) = visited.including(self.identifier) in
+			self.communicateWith->exists(bridge|
+				bridge.reaches(server, updatedVisited)
+			)
+		endif
+	else 
+		false
+	endif;
+
+rule CyberPhysicalSystem_2_Deployment {
+	from cps : CPS!CyberPhysicalSystem 
+	to out : DEP!Deployment (
+		hosts <- cps.hostTypes->collect(ht | ht.instances)->flatten()
+	)
+}
+
+rule HostInstance_2_DeploymentHost {
+	from hostInstance : CPS!HostInstance 
+	to out : DEP!DeploymentHost (
+		ip <- hostInstance.nodeIp,
+		applications <- hostInstance.applications
+	)
+}
+
+rule ApplicationInstance_2_DeploymentApplication {
+	from appInstance : CPS!ApplicationInstance (
+		appInstance.type.cps = thisModule.rootCps
+	)
+	to out : DEP!DeploymentApplication (
+		id <- appInstance.identifier,
+		behavior <- appInstance.type.behavior
+	)
+}
+
+rule StateMachine_2_DeploymentBehavior {
+	from stateMachine : CPS!StateMachine 
+	to out : DEP!DeploymentBehavior (
+		description <- stateMachine.identifier,
+		--- Transform states
+		states <- stateMachine.states,
+		--- Transform transitions
+		transitions <- stateMachine.states->collect(state | state.outgoingTransitions)->flatten(),
+		--- set current state
+		current <- stateMachine.states->select(state | stateMachine.initial = state)->first()
+	)
+}
+
+rule State_2_BehaviorState {
+	from state : CPS!State 
+	to out : DEP!BehaviorState (
+		description <- state.identifier,
+		outgoing <- state.outgoingTransitions
+	)
+}
+
+rule Transition_2_BehaviorTransition {
+	from transition : CPS!Transition (
+		not transition.targetState.oclIsUndefined()
+	)
+	to out : DEP!BehaviorTransition (
+		description <- transition.identifier,
+		to <- transition.targetState,
+		
+		--- triggers
+		trigger <-
+			if (not transition.action.oclIsUndefined()) then
+				if (thisModule.isSignal(transition.action)) then
+					thisModule.waitingTransitions->select( targetTransition |
+						thisModule.isWaitSignal_withSignal(targetTransition.action, thisModule.getSignalId(transition.action))
+						and
+						targetTransition.belongsToApplicationType(thisModule.getAppTypeId(transition.action))
+						and
+						transition.applicationInstance.allocatedTo.reaches(
+							targetTransition.applicationInstance.allocatedTo, 
+							Set{}
+						)
+					)
+				else 
+					Sequence{}
+				endif 
+			else 
+				Sequence{}
+			endif
+	)
+}
