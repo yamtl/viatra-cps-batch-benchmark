@@ -1,0 +1,66 @@
+plugins {
+	id "org.xtext.xtend" version "1.0.21" // 24-01-2018
+}
+
+group 'arturboronat'
+version '0.0.1-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+sourceCompatibility = 1.8
+
+eclipse {
+	project {
+	  name = 'm2m.batch.cps2dep.yamtl'
+	  buildCommand 'org.eclipse.jdt.core.javabuilder'
+	  buildCommand 'org.eclipse.buildship.core.gradleprojectbuilder'
+	  buildCommand 'org.eclipse.wst.common.project.facet.core.builder'
+
+	  natures 'org.eclipse.jdt.core.javanature',
+		  'org.eclipse.buildship.core.gradleprojectnature',
+		  'org.eclipse.wst.common.project.facet.core.nature',
+		  'org.eclipse.xtext.ui.shared.xtextNature',
+		  'org.eclipse.pde.PluginNature'
+	}
+}
+
+
+repositories {
+	mavenCentral()
+}
+
+task wrapper(type: Wrapper) {
+	gradleVersion = '4.6'
+}
+
+
+// XTEND: configures output directories for generated java
+xtend {
+	sourceSets {
+		main.xtendOutputDir = 'src/main/xtend-gen'
+		test.xtendOutputDir = 'src/test/xtend-gen'
+	}
+}
+
+
+sourceSets {
+	main {
+		java {
+			srcDirs = [
+				'src/main/java',
+				'src/main/emf-gen',
+				'src/main/xtend-gen'
+			]
+		}
+	}
+}
+
+dependencies {
+	compile "com.google.guava:guava-testlib:24.1-jre"
+	compile "org.eclipse.xtend:org.eclipse.xtend.lib:2.13.0" 
+    compile files('lib/yamtl-all-0.0.1-SNAPSHOT.jar') 
+}
+
+
+
