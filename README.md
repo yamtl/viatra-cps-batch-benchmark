@@ -44,5 +44,5 @@ MacBookPro11,5 Core i7 2.5 GHz, with four cores and 16 GB of RAM
 
 ### Raw results
 
-* [original results](experimental-results/XForm_CS_PS_Performance.xlsx): provided in [VIATRA CPS benchmark](https://github.com/viatra/viatra-cps-benchmark)
+* [original results](https://github.com/yamtl/viatra-cps-batch-benchmark/tree/master/m2m.batch.data/experimental-results/XForm_CS_PS_Performance.xlsx): provided in [VIATRA CPS benchmark](https://github.com/viatra/viatra-cps-benchmark)
 * [results obtained](https://github.com/yamtl/viatra-cps-batch-benchmark/tree/master/m2m.batch.data/experimental-results)
