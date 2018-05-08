@@ -21,8 +21,8 @@ Batch component of the [VIATRA CPS benchmark](https://github.com/viatra/viatra-c
 
 ### Input models used
 
-* [client-server scenario](./cps2dep/clientServer/cps/)
-* [publish-subscribe scenario](./cps2dep/publishSubscribe/cps/)
+* [client-server scenario](https://github.com/yamtl/viatra-cps-batch-benchmark/tree/master/m2m.batch.data/cps2dep/clientServer/cps)
+* [publish-subscribe scenario](https://github.com/yamtl/viatra-cps-batch-benchmark/tree/master/m2m.batch.data/cps2dep/publishSubscribe/cps)
 
 
 ## Experiments
@@ -45,4 +45,4 @@ MacBookPro11,5 Core i7 2.5 GHz, with four cores and 16 GB of RAM
 ### Raw results
 
 * [original results](experimental-results/XForm_CS_PS_Performance.xlsx): provided in [VIATRA CPS benchmark](https://github.com/viatra/viatra-cps-benchmark)
-* [results obtained](./experimental-results/)
+* [results obtained](https://github.com/yamtl/viatra-cps-batch-benchmark/tree/master/m2m.batch.data/experimental-results)
