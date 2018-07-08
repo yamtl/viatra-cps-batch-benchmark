@@ -10,24 +10,17 @@ apply plugin: 'eclipse'
 apply plugin: 'application'
 
 
-mainClassName = "experiments.yamtl.Cps2DepRunner_ClientServer_YAMTL_modification"
-//mainClassName = "experiments.yamtl.Cps2DepRunner_ClientServer_YAMTL_full_modification"
-applicationDefaultJvmArgs = ["-Xmx12288m"]
-
-
 sourceCompatibility = 1.8
 
 eclipse {
 	project {
 	  name = 'm2m.batch.cps2dep.yamtl'
 	  buildCommand 'org.eclipse.jdt.core.javabuilder'
-//	  buildCommand 'org.eclipse.ajdt.core.ajbuilder'
 	  buildCommand 'org.eclipse.buildship.core.gradleprojectbuilder'
 	  buildCommand 'org.eclipse.wst.common.project.facet.core.builder'
 	  buildCommand 'org.eclipse.viatra.query.tooling.ui.projectbuilder'
 
 	  natures 'org.eclipse.jdt.core.javanature',
-//	  	  'org.eclipse.ajdt.ui.ajnature',
 		  'org.eclipse.buildship.core.gradleprojectnature',
 		  'org.eclipse.wst.common.project.facet.core.nature',
 		  'org.eclipse.xtext.ui.shared.xtextNature',
@@ -68,56 +61,12 @@ sourceSets {
 	}
 }
 
-
-// ASPECTJ
-//configurations {
-//	ajc
-//	aspects 
-//	aspectCompile
-//	ajInpath
-//	compile {
-//		extendsFrom aspects
-//	}
-//}
-//  
-//compileJava {
-//  sourceCompatibility="1.8"
-//  targetCompatibility="1.8"
-//
-//  doLast{
-//	  ant.taskdef( resource:"org/aspectj/tools/ant/taskdefs/aspectjTaskdefs.properties", classpath: configurations.ajc.asPath )
-//	  ant.iajc(
-//		  source:"1.8", 
-//		  target:"1.8", 
-//		  destDir: sourceSets.main.output.classesDir.absolutePath, 
-//		  inpath: configurations.ajInpath.asPath,
-//		  maxmem: "512m", 
-//		  fork: "true",
-//		  aspectPath:configurations.aspects.asPath,  
-//		  sourceRootCopyFilter:"**/.git/*,**/*.java",
-//		  classpath:"${configurations.compile.asPath};${configurations.aspectCompile.asPath}"){
-//		  sourceroots{
-//			  sourceSets.main.java.srcDirs.each{
-//				  pathelement(location:it.absolutePath)
-//			  }
-//		  }
-//	  }
-//  }
-//}
-
 dependencies {
 	compile "yamtl:yamtl:0.0.1-SNAPSHOT"
 	compile "com.google.guava:guava-testlib:24.1-jre"
 	compile "org.eclipse.xtend:org.eclipse.xtend.lib:2.13.0" 
 	compile 'org.eclipse.emf:org.eclipse.emf.ecore.change:2.11+'
-//    compile files('lib/yamtl-all-0.0.1-SNAPSHOT.jar')
-	
-	// AspectJ
-//	ajc "org.aspectj:aspectjtools:1.9.1"
-//	compile("org.aspectj:aspectjrt:1.9.1")
-//	compile("org.aspectj:aspectjweaver:1.9.1")
-//	aspects "yamtl:yamtl:0.0.1-SNAPSHOT"
-//	ajInpath "yamtl:yamtl:0.0.1-SNAPSHOT"
+    compile files('lib/yamtl-all-0.0.1-SNAPSHOT.jar')
 }
 
 
