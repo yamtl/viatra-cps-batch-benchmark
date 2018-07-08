@@ -1,7 +1,7 @@
 package experiments.yamtl
 
 import cps2dep.yamtl.Cps2DepYAMTL
-import experiments.utils.FullBenchmarkRunner
+import experiments.utils.BenchmarkRunner
 import java.util.List
 import org.eclipse.emf.ecore.EObject
 import org.eclipse.emf.ecore.resource.Resource
@@ -12,25 +12,26 @@ import org.eclipse.viatra.examples.cps.deployment.DeploymentPackage
 import org.eclipse.viatra.examples.cps.traceability.TraceabilityFactory
 import org.eclipse.viatra.examples.cps.traceability.TraceabilityPackage
 
-class Cps2DepRunner_ClientServer_YAMTL_full extends FullBenchmarkRunner {
+class Cps2DepRunner_lowSynch_YAMTL extends BenchmarkRunner {
 
 	var Cps2DepYAMTL xform 
 	var List<EObject> rootObjects 
     
+    val ROOT_PATH = '../'
+    
 	override getIdentifier() {
-		"cps2dep_clientServer_yamtl"
+		"cps2dep_lowSynch_yamtl"
 	}
 	
 	override getIterations() {
-		#[1, 1, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768]
-//		#[1, 1, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384]
-//		#[1, 32768]
+		#[1, 1, 8, 16, 32, 64, 128, 256]
+//		#[1]
 	}
     
 	def static void main(String[] args) {
 		
-		val runner = new Cps2DepRunner_ClientServer_YAMTL_full
-		runner.runBenchmark(10)
+		val runner = new Cps2DepRunner_lowSynch_YAMTL
+		runner.runBenchmark
 	
 	} 
 
@@ -39,10 +40,10 @@ class Cps2DepRunner_ClientServer_YAMTL_full extends FullBenchmarkRunner {
 	override doLoad(String iteration) {
 		doStandaloneEMFSetup()
 		
-		var String inputModelPath = '''../m2m.batch.data/cps2dep/clientServer/cps/clientServer_«iteration».cyberphysicalsystem.xmi'''
-		
+		var String inputModelPath = '''«ROOT_PATH»/m2m.batch.data/cps2dep/lowSynch/lowSynch_«iteration».cyberphysicalsystem.xmi'''
+
 		xform = new Cps2DepYAMTL
-		xform.stageUpperBound = 1
+		xform.fromRoots = false
 		
 		// prepare models
 		// this will normally be outside the trafo declaration
@@ -54,20 +55,20 @@ class Cps2DepRunner_ClientServer_YAMTL_full extends FullBenchmarkRunner {
 		
 	}
 	
-	override doInitialization() {
+	override doInitialization(String iteration) {
 		// nothing to do
 	}
 	
-	override doTransformation() {
+	override doTransformation(String iteration) {
 		xform.execute()
 		xform.getTraceModel()
 	}
 	
 	override doSave(String iteration) {
-//		var String outputModelPath = '''../m2m.batch.data/cps2dep/clientServer/deployment/yamtl/clientServer_«iteration».deployment.xmi'''
+//		var String outputModelPath = '''«ROOT_PATH»/m2m.batch.data/cps2dep/statistics/deployment/yamtl/statistics_«iteration».deployment.xmi'''
 //		xform.saveOutputModels(#{'dep' -> outputModelPath})
 //		
-//		var String outputTraceModelPath = '''../m2m.batch.data/cps2dep/clientServer/deployment/yamtl/clientServer_«iteration».traceability.xmi'''
+//		var String outputTraceModelPath = '''«ROOT_PATH»/m2m.batch.data/cps2dep/statistics/deployment/yamtl/statistics_«iteration».traceability.xmi'''
 //		println("save traceability: " + outputTraceModelPath)
 //		xform.saveTraceModel(outputTraceModelPath)
 	}

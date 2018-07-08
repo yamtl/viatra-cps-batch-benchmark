@@ -8,17 +8,16 @@ import org.eclipse.emf.ecore.resource.Resource
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl
 import org.eclipse.viatra.examples.cps.cyberPhysicalSystem.CyberPhysicalSystem
 import org.eclipse.viatra.examples.cps.cyberPhysicalSystem.CyberPhysicalSystemPackage
-import org.eclipse.viatra.examples.cps.deployment.Deployment
 import org.eclipse.viatra.examples.cps.deployment.DeploymentPackage
 import org.eclipse.viatra.examples.cps.traceability.TraceabilityFactory
 import org.eclipse.viatra.examples.cps.traceability.TraceabilityPackage
 
-class Cps2DepRunner_YAMTL_publishSubscribe extends BenchmarkRunner {
+class Cps2DepRunner_publishSubscribe_YAMTL extends BenchmarkRunner {
 
 	var Cps2DepYAMTL xform 
 	var List<EObject> rootObjects 
     
-    val ROOT_PATH = '/Users/ab373/Documents/ArturData/WORK/git/viatra-cps-batch-benchmark'
+    val ROOT_PATH = '../'
     
 	override getIdentifier() {
 //		"cps2dep_clientServer_yamtl"
@@ -26,15 +25,15 @@ class Cps2DepRunner_YAMTL_publishSubscribe extends BenchmarkRunner {
 	}
 	
 	override getIterations() {
-//		#[1, 1, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768]
+		#[1, 1, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768]
 //		#[1, 1, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384]
 //		#[1, 16384]
-		#[1]
+//		#[1]
 	}
     
 	def static void main(String[] args) {
 		
-		val runner = new Cps2DepRunner_YAMTL_publishSubscribe
+		val runner = new Cps2DepRunner_publishSubscribe_YAMTL
 		runner.runBenchmark
 	
 	} 
@@ -49,41 +48,38 @@ class Cps2DepRunner_YAMTL_publishSubscribe extends BenchmarkRunner {
 //		var String inputModelPath = '''../m2m.batch.data/cps2dep/clientServer/iter2/xmi/clientServer_«iteration».cyberphysicalsystem.xmi'''
 //		var String outputModelPath = '''../m2m.batch.data/cps2dep/clientServer/deployment/yamtl/clientServer-«iteration».deployment.xmi'''
 		var String inputModelPath = '''«ROOT_PATH»/m2m.batch.data/cps2dep/publishSubscribe/cps/publishSubscribe_«iteration».cyberphysicalsystem.xmi'''
-		var String outputModelPath = '''«ROOT_PATH»/m2m.batch.data/cps2dep/publishSubscribe/deployment/yamtl/publishSubscribe-«iteration».deployment.xmi'''
+		
 		
 
 		xform = new Cps2DepYAMTL
+		xform.stageUpperBound = 1
 		
 		// prepare models
 		// this will normally be outside the trafo declaration
-		xform.registry.loadModelInstances(#{'cps' -> inputModelPath, 'dep' -> outputModelPath})
+		xform.loadInputModels(#{'cps' -> inputModelPath})
+		val cpsRes = xform.getModelResource('cps')
 		xform.mapping = TraceabilityFactory.eINSTANCE.createCPSToDeployment => [
-			it.cps = xform.registry.inModelInstances.values.head.contents.head as CyberPhysicalSystem
-			it.deployment = xform.registry.outModelInstances.values.head.contents.head as Deployment 
+			it.cps = cpsRes.contents.head as CyberPhysicalSystem
 		]
 		
 	}
 	
-	override doInitialization() {
+	override doInitialization(String iteration) {
 		// nothing to do
 	}
 	
-	override doTransformation() {
-		rootObjects = xform.execute
-		xform.traceModel
+	override doTransformation(String iteration) {
+		xform.execute()
+		xform.getTraceModel()
 	}
 	
 	override doSave(String iteration) {
-//		mapping = TraceabilityFactory.eINSTANCE.createCPSToDeployment => [
-//			it.cps = registry.inModelInstances.values.head as CyberPhysicalSystem
-//			it.deployment = registry.outModelInstances.values.head as Deployment 
-//		]
-		
-		xform.registry.saveModel(rootObjects)
-		
-		var String outputTraceModelPath = '''«ROOT_PATH»/m2m.batch.data/cps2dep/publishSubscribe/deployment/yamtl/publishSubscribe-«iteration».traceability.xmi'''
-		println("save traceability: " + outputTraceModelPath)
-		xform.saveTraceModel(outputTraceModelPath)
+//		var String outputModelPath = '''«ROOT_PATH»/m2m.batch.data/cps2dep/publishSubscribe/deployment/yamtl/publishSubscribe-«iteration».deployment.xmi'''
+//		xform.saveOutputModels(#{'dep' -> outputModelPath})
+//		
+//		var String outputTraceModelPath = '''«ROOT_PATH»/m2m.batch.data/cps2dep/publishSubscribe/deployment/yamtl/publishSubscribe-«iteration».traceability.xmi'''
+//		println("save traceability: " + outputTraceModelPath)
+//		xform.saveTraceModel(outputTraceModelPath)
 	}
 	
 	override doDispose() {

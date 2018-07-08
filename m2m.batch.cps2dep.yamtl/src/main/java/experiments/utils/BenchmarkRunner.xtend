@@ -12,8 +12,8 @@ abstract class BenchmarkRunner  {
 	extension val static GroovyUtil util = new GroovyUtil() 
 
     def abstract void doLoad(String iteration)
-    def abstract void doInitialization()
-    def abstract void doTransformation()
+    def abstract void doInitialization(String iteration)
+    def abstract void doTransformation(String iteration)
     def abstract void doSave(String iteration)
     def abstract void doDispose()
     
@@ -79,7 +79,7 @@ abstract class BenchmarkRunner  {
 			// PRE-PROCESSING
 			memoryBeforeInitialization = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
 			start = System.currentTimeMillis();
-			doInitialization
+			doInitialization(fileNameSuffix)
 			now = System.currentTimeMillis();
 			preProcessTime = now - start;
 			memoryAfterInitialization = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
@@ -88,7 +88,7 @@ abstract class BenchmarkRunner  {
 			// TRANSFORMATION
 			memoryBeforeTransformation = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
 			start = System.currentTimeMillis();
-			doTransformation
+			doTransformation(fileNameSuffix)
 			now = System.currentTimeMillis();
 			trafoTime = now - start;
 			memoryAfterTransformation = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();

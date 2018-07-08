@@ -8,7 +8,6 @@ import org.eclipse.emf.ecore.resource.Resource
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl
 import org.eclipse.viatra.examples.cps.cyberPhysicalSystem.CyberPhysicalSystem
 import org.eclipse.viatra.examples.cps.cyberPhysicalSystem.CyberPhysicalSystemPackage
-import org.eclipse.viatra.examples.cps.deployment.Deployment
 import org.eclipse.viatra.examples.cps.deployment.DeploymentPackage
 import org.eclipse.viatra.examples.cps.traceability.TraceabilityFactory
 import org.eclipse.viatra.examples.cps.traceability.TraceabilityPackage
@@ -24,9 +23,9 @@ class Cps2DepRunner_PublishSubscriber_YAMTL_full extends FullBenchmarkRunner {
 	}
 	
 	override getIterations() {
-//		#[1, 1, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768]
+		#[1, 1, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768]
 //		#[1, 1, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384]
-		#[1, 32768]
+//		#[1, 32768]
 	}
     
 	def static void main(String[] args) {
@@ -44,17 +43,19 @@ class Cps2DepRunner_PublishSubscriber_YAMTL_full extends FullBenchmarkRunner {
 //		var String inputModelPath = '''../m2m.batch.data/cps2dep/clientServer/iter2/xmi/clientServer_«iteration».cyberphysicalsystem.xmi'''
 //		var String outputModelPath = '''../m2m.batch.data/cps2dep/clientServer/deployment/yamtl/clientServer-«iteration».deployment.xmi'''
 		var String inputModelPath = '''../m2m.batch.data/cps2dep/publishSubscribe/cps/publishSubscribe_«iteration».cyberphysicalsystem.xmi'''
-		var String outputModelPath = '''../m2m.batch.data/cps2dep/publishSubscribe/deployment/yamtl/publishSubscribe_«iteration».deployment.xmi'''
+		
 		
 		xform = new Cps2DepYAMTL
+		xform.stageUpperBound = 1
 		
 		// prepare models
 		// this will normally be outside the trafo declaration
-		xform.registry.loadModelInstances(#{'cps' -> inputModelPath, 'dep' -> outputModelPath})
+		xform.loadInputModels(#{'cps' -> inputModelPath})
+		val cpsRes = xform.getModelResource('cps')
 		xform.mapping = TraceabilityFactory.eINSTANCE.createCPSToDeployment => [
-			it.cps = xform.registry.inModelInstances.values.head.contents.head as CyberPhysicalSystem
-			it.deployment = xform.registry.outModelInstances.values.head.contents.head as Deployment 
+			it.cps = cpsRes.contents.head as CyberPhysicalSystem
 		]
+		
 		
 	}
 	
@@ -63,20 +64,16 @@ class Cps2DepRunner_PublishSubscriber_YAMTL_full extends FullBenchmarkRunner {
 	}
 	
 	override doTransformation() {
-		rootObjects = xform.execute
-		xform.traceModel
+		xform.execute()
+		xform.getTraceModel()
 	}
 	
 	override doSave(String iteration) {
-//		mapping = TraceabilityFactory.eINSTANCE.createCPSToDeployment => [
-//			it.cps = registry.inModelInstances.values.head as CyberPhysicalSystem
-//			it.deployment = registry.outModelInstances.values.head as Deployment 
-//		]
-		
-//		xform.registry.saveModel(rootObjects)
+//		var String outputModelPath = '''../m2m.batch.data/cps2dep/publishSubscribe/deployment/yamtl/publishSubscribe_«iteration».deployment.xmi'''
+//		xform.saveOutputModels(#{'dep' -> outputModelPath})
 //		
 //		var String outputTraceModelPath = '''../m2m.batch.data/cps2dep/publishSubscribe/deployment/yamtl/publishSubscribe_«iteration».traceability.xmi'''
-////		println("save traceability: " + outputTraceModelPath)
+//		println("save traceability: " + outputTraceModelPath)
 //		xform.saveTraceModel(outputTraceModelPath)
 	}
 	

@@ -5,9 +5,12 @@ import java.io.File
 import java.util.Date
 import java.util.List
 import java.util.TimeZone
+import org.eclipse.xtend.lib.annotations.Accessors
 import org.eclipse.xtext.util.Files
 
 abstract class FullBenchmarkRunner  {
+	@Accessors 
+	public boolean debug = false 
 	
 	extension val static GroovyUtil util = new GroovyUtil() 
 
@@ -34,10 +37,10 @@ abstract class FullBenchmarkRunner  {
 		
 		var long start 
 		var long now 
-		var long loadTime 
-		var long preProcessTime 
-		var long trafoTime 
-		var long saveTime
+		var double loadTime 
+		var double preProcessTime 
+		var double trafoTime 
+		var double saveTime
 		var String previousFileName
 		
 		var List<PerformanceResult> iterPerformanceResults = newArrayList
@@ -48,7 +51,7 @@ abstract class FullBenchmarkRunner  {
 		for (i: 0 ..< times+2) {
 			results += ''', load «i» (ms), pre-process «i» (ms), trafo «i» (ms), save «i» (ms), total tool-specific iter«i» (ms)'''
 		}
-		results += ", avg of inner 10 results (ms), median of inner 10 results (ms)\n"
+		results += ", avg of inner 10 results (ms), median of 1st Xform, median of 2nd Xform, median of total time - 10 results (ms)\n"
 		
 		var resultsMemory = "scale"
 		for (i: 0 ..< times+2) {
@@ -77,45 +80,55 @@ abstract class FullBenchmarkRunner  {
 				//////////////////////////////////////////////////////////////////////////
 				// LOAD
 				memoryBeforeLoadingModels = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
-				start = System.currentTimeMillis();
+				start = System.nanoTime();
 				doLoad(fileNameSuffix)
-				now = System.currentTimeMillis();
-				loadTime = now - start;
+				now = System.nanoTime();
+				loadTime = (now - start) / 1000000 as double;
 				memoryAfterLoadingModels = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
 
+				if (debug) println('''load time: «loadTime»''')
 				freeGC()
 			
 				//////////////////////////////////////////////////////////////////////////
 				// PRE-PROCESSING
 				memoryBeforeInitialization = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
-				start = System.currentTimeMillis();
+				start = System.nanoTime();
 				doInitialization
-				now = System.currentTimeMillis();
-				preProcessTime = now - start;
+				now = System.nanoTime();
+				preProcessTime = (now - start) / 1000000 as double;
 				memoryAfterInitialization = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
 
+				if (debug) println('''pre-process time: «preProcessTime»''')
 				freeGC()
 				
 				//////////////////////////////////////////////////////////////////////////
 				// TRANSFORMATION
 				memoryBeforeTransformation = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
-				start = System.currentTimeMillis();
+				start = System.nanoTime();
 				doTransformation
-				now = System.currentTimeMillis();
-				trafoTime = now - start;
+				now = System.nanoTime();
+				trafoTime = (now - start) / 1000000 as double;
 				memoryAfterTransformation = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
 
+				if (debug) {
+					println('''trafo time: «start»''')
+					println('''trafo time: «now»''')
+					println('''trafo time: «now-start»''')
+					println('''trafo time: «trafoTime»''')
+				}
 				freeGC()
 				
 				//////////////////////////////////////////////////////////////////////////
 				// SAVE OUTPUT
 				memoryBeforeSaving = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
-				start = System.currentTimeMillis();
+				start = System.nanoTime();
 				doSave(fileNameSuffix)
-				now = System.currentTimeMillis();
-				saveTime = now - start;
+				now = System.nanoTime();
+				saveTime = (now - start) / 1000000 as double;
 				memoryAfterSaving = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
 
+				if (debug) println('''save time: «saveTime»''')
+				
 				// SAVING ITER RESULTS
 				val result = new PerformanceResult(loadTime, preProcessTime, trafoTime, saveTime)
 				iterPerformanceResults.add(
@@ -144,9 +157,13 @@ abstract class FullBenchmarkRunner  {
 							
 			// PERFORMANCE
 			iterPerformanceResults.sortInplaceBy[totalTime]
-			val long median=iterPerformanceResults.subList(1,11).map[totalTime].median
-			val long avg=iterPerformanceResults.subList(1,11).map[totalTime].reduce[ a, b | a + b ] / times
+			val double median1stXform=iterPerformanceResults.subList(1,11).map[initTime].median
+			val double median2ndXform=iterPerformanceResults.subList(1,11).map[it.trafoTime].median
+			val double median=iterPerformanceResults.subList(1,11).map[totalTime].median
+			val double avg=iterPerformanceResults.subList(1,11).map[totalTime].reduce[ a, b | a + b ] / times
 			
+			println('''time taken (init/1st Xform): «median1stXform» ms''')
+			println('''time taken (batch trafo/update + 2nd Xform): «median2ndXform» ms''')
 			println('''time taken: «median» ms''')
 			
 			results += ''
@@ -156,7 +173,7 @@ abstract class FullBenchmarkRunner  {
 				val PerformanceResult result = iterPerformanceResults.get(j)
 				results += ''', «result.loadTime», «result.initTime», «result.trafoTime», «result.saveTime», «result.totalTime»'''
 			}
-			results += ''',«avg», «median»
+			results += ''',«avg», «median1stXform», «median2ndXform», «median»
 			'''
 			
 			
@@ -213,6 +230,17 @@ abstract class FullBenchmarkRunner  {
 	}
 	
 	def static long median(long[] m) {
+		// sort list in ascending order
+		m.sortInplace
+		
+	    val int middle = m.length/2;
+	    if (m.length%2 == 1) {
+	        return m.get(middle);
+	    } else {
+	        return (m.get(middle) + m.get(middle)) / 2;
+	    }
+	}
+	def static double median(double[] m) {
 		// sort list in ascending order
 		m.sortInplace
 		

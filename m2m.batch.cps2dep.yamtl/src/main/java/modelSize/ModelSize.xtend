@@ -4,7 +4,6 @@ import experiments.utils.GroovyUtil
 import java.util.Collection
 import java.util.Date
 import java.util.TimeZone
-import moment2.registry.EmfMetamodelRegistry
 import org.eclipse.emf.ecore.EObject
 import org.eclipse.emf.ecore.EReference
 import org.eclipse.emf.ecore.resource.Resource
@@ -13,6 +12,7 @@ import org.eclipse.viatra.examples.cps.cyberPhysicalSystem.CyberPhysicalSystemPa
 import org.eclipse.viatra.examples.cps.deployment.DeploymentPackage
 import org.eclipse.viatra.examples.cps.traceability.TraceabilityPackage
 import org.eclipse.xtext.util.Files
+import yamtl.registry.EmfMetamodelRegistry
 
 class ModelSize {
 	extension val static GroovyUtil util = new GroovyUtil() 
