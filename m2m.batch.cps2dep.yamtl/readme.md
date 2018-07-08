@@ -29,11 +29,13 @@ Test classes have been instrumented in order to reimplement the dependencies to 
 * test classes are not parameterized
 * the corresponding constructor has been replaced with:	
 
-	val extension Cps2DepTestDriver_YAMTL = new Cps2DepTestDriver_YAMTL
-	val extension CPSModelBuilderUtil = new CPSModelBuilderUtil
-	new() {
-		super()
-	}
+```
+val extension Cps2DepTestDriver_YAMTL = new Cps2DepTestDriver_YAMTL
+val extension CPSModelBuilderUtil = new CPSModelBuilderUtil
+new() {
+	super()
+}
+```
 
 The class `experiments.yamtl.Cps2DepTestDriver_YAMTL` under `src/test/java` contains the code implementing the methods `initializeTransformation(CPSToDeployment)` and `executeTransformation()`. 
 
@@ -49,11 +51,11 @@ Removing a `hostInstance` does not trigger the deletion of the reference `alloca
 
 Test cases affected:
 
-  * StateMachineMappingTest::removeHostInstanceOfBehavior()
-  * StateMappingTest::removeHostInstanceOfState()
-  * ActionMappingTest::removeHostInstanceOfSend
-  * TransitionMappingTest::removeHostInstanceOfTransition
-  * ApplicationMappingTest::removeHostInstanceOfApplication
+  * `StateMachineMappingTest::removeHostInstanceOfBehavior()`
+  * `StateMappingTest::removeHostInstanceOfState()`
+  * `ActionMappingTest::removeHostInstanceOfSend`
+  * `TransitionMappingTest::removeHostInstanceOfTransition`
+  * `ApplicationMappingTest::removeHostInstanceOfApplication`
   
 These test cases have been modified by unsetting the object features: `hostInstance.applications.clear`
 
@@ -63,7 +65,7 @@ Similarly to the aforementioned problem, the reference `targetState` is not uns
 
 Test case affected:
 
-* TransitionMappingTest::removeTargetState
+* `TransitionMappingTest::removeTargetState`
 
 This test case has been modified by adding `transition.targetState = null`.
 
