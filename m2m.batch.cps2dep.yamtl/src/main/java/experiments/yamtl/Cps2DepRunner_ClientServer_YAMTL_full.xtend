@@ -42,7 +42,7 @@ class Cps2DepRunner_ClientServer_YAMTL_full extends FullBenchmarkRunner {
 		var String inputModelPath = '''../m2m.batch.data/cps2dep/clientServer/cps/clientServer_«iteration».cyberphysicalsystem.xmi'''
 		
 		xform = new Cps2DepYAMTL
-		xform.stageUpperBound = 1
+		xform.fromRoots = false
 		
 		// prepare models
 		// this will normally be outside the trafo declaration

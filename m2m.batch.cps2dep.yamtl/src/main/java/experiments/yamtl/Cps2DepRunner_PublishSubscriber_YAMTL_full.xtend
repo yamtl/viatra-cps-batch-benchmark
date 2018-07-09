@@ -46,7 +46,7 @@ class Cps2DepRunner_PublishSubscriber_YAMTL_full extends FullBenchmarkRunner {
 		
 		
 		xform = new Cps2DepYAMTL
-		xform.stageUpperBound = 1
+		xform.fromRoots = false
 		
 		// prepare models
 		// this will normally be outside the trafo declaration

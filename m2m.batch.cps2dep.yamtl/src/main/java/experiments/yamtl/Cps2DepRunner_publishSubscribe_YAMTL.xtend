@@ -52,7 +52,8 @@ class Cps2DepRunner_publishSubscribe_YAMTL extends BenchmarkRunner {
 		
 
 		xform = new Cps2DepYAMTL
-		xform.stageUpperBound = 1
+		xform.fromRoots = false
+
 		
 		// prepare models
 		// this will normally be outside the trafo declaration
