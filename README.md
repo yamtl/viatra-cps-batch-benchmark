@@ -32,7 +32,9 @@ The different solutions provided in the VIATRA CPS benchmark can be found [here]
 
 ## Model transformations used for the experiments
 
-Below we provide pointers to the solutions of the transformation used in our adaptation of the **batch component** of the VIATRA CPS benchmark, giving pointers to where they are defined in the original benchmark, if available.
+Below we provide pointers to the solutions of the transformation used in our adaptation of the **batch component** of the VIATRA CPS benchmark, giving pointers to where they are defined in the original benchmark, if available. These projects have been built as separate standalone executable jars, which we call *runners*. The runners used for the experiments together with the process used to build them is explained at the end of this section.
+
+### Solutions used in our experiments
 
 Our solution:
 * [YAMTL](https://github.com/yamtl/viatra-cps-batch-benchmark/tree/master/m2m.batch.cps2dep.yamtl)
@@ -61,6 +63,20 @@ Existing solutions that have been reused:
 
 From [the list of batch solutions](https://github.com/viatra/viatra-docs/blob/master/cps/Alternative-transformation-methods.adoc#batch) considered in the VIATRA CPS benchmarks, the only one that has not been evaluated is [VIATRA Batch API](https://github.com/viatra/viatra-docs/blob/master/cps/VIATRA-transformation-API-based-batch-M2M-transformation.adoc). However, this should not affect the conclusions achieved in the experiment because this variant is not the fastest.
 
+### Runners
+
+[This script](https://github.com/yamtl/viatra-cps-batch-benchmark/blob/master/m2m.batch.data/runBatchBenchmarks.sh) executes the different runners of the benchmark. **Beware that its full execution may well take more than twenty-four hours**. Feel free to modify the script to execute parts of it.
+
+The runners used in our experiments can be found [here](https://github.com/yamtl/viatra-cps-batch-benchmark/tree/master/m2m.batch.data/runners). There is a runner for each solution and scenario. Each of these runners produces a CSV file, as the ones available [here](https://github.com/yamtl/viatra-cps-batch-benchmark/tree/master/m2m.batch.data/experimental-results), containing the raw data of the different experiments for each model size.
+
+Each of this runners has been built in the Eclipse IDE by exporting the corresponding project (containing a benchmark solution) as a  `Runnable JAR file`. The following options need to be selected:
+* Select the corresponding main class from the project of choice. The main class chosen must extend the benchmark harness `FullBenchmarkRunner`, included in each project. For example, [this runner](https://github.com/yamtl/viatra-cps-batch-benchmark/blob/master/m2m.batch.cps2dep.yamtl/src/main/java/experiments/yamtl/Cps2DepRunner_ClientServer_YAMTL_full.xtend) for the YAMTL solution.
+* Select the option `Package required libraries into generated JAR` for `library handling`.
+* Provide the desired location for the JAR file. 
+
+
+
+
 ## Input models used
 
 The different scenarios of the VIATRA CPS benchmark are discussed [here](https://github.com/viatra/viatra-cps-benchmark/wiki/Benchmark-specification#cases). We have used the VIATRA CPS model generator to generate models for each of the scenarios. These fixed input models have been used in all of our experiments:
@@ -70,7 +86,6 @@ The different scenarios of the VIATRA CPS benchmark are discussed [here](https:/
 * [low synch scenario](https://github.com/yamtl/viatra-cps-batch-benchmark/tree/master/m2m.batch.data/cps2dep/lowSynch)
 * [simple scaling](https://github.com/yamtl/viatra-cps-batch-benchmark/tree/master/m2m.batch.data/cps2dep/simpleScaling)
 * [statistic based](https://github.com/yamtl/viatra-cps-batch-benchmark/tree/master/m2m.batch.data/cps2dep/statistics)
-
 
 
 ## Experiments
