@@ -2,7 +2,7 @@
 
 This benchmark is an adaptation of the batch component of the [VIATRA CPS benchmark](https://github.com/viatra/viatra-cps-benchmark) for analyzing the performance of the [YAMTL model transformation engine](https://yamtl.github.io).
 
-The experiments performed with this benchmark were used to inform the conclusions in the paper:
+The experiments performed with this benchmark were used to inform the conclusions of the publication:
 
 *Artur Boronat. Expressive and Efficient Model Transformation with an Internal DSL of Xtend. MODELS 2018.*
 
