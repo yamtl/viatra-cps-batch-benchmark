@@ -53,7 +53,8 @@ We have also partially implemented the transformation using:
 Existing solutions that have been reused:
 
 * [VIATRA EMF-IncQuery](https://github.com/yamtl/viatra-cps-batch-benchmark/blob/master/m2m.batch.cps2dep.viatra.eiq/src/org/eclipse/viatra/examples/cps/xform/m2m/batch/eiq/CPS2DeploymentBatchTransformationEiq.xtend)
-  * corresponds [to this case](https://github.com/viatra/viatra-docs/blob/master/cps/Simple-Xtend-and-Query-M2M-transformation.adoc) in the VIATRA CPS benchmark    
+  * It corresponds [to this case](https://github.com/viatra/viatra-docs/blob/master/cps/Simple-Xtend-and-Query-M2M-transformation.adoc) in the VIATRA CPS benchmark.
+  * If compilation errors appear, please close the other projects and allow Eclipse to build it.
 * Xtend (plain): both extracted from the original benchmark
   * [Xtend (simple)](https://github.com/yamtl/viatra-cps-batch-benchmark/blob/master/m2m.batch.cps2dep.xtend.plugin/src/org/eclipse/viatra/examples/cps/xform/m2m/batch/simple/CPS2DeploymentBatchTransformationSimple.xtend)
     * corresponds [to this case](https://github.com/viatra/viatra-docs/blob/master/cps/Simple-and-optimized-Xtend-batch-M2M-transformation.adoc/#simple-and-optimized-xtend-batch-m2m-transformation) in the VIATRA CPS benchmark    
