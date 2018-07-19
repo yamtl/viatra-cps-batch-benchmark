@@ -18,7 +18,7 @@ echo "RUNNING FROM SCRIPT: ViatraEiq_clientServer"
 java -Xmx12288m -XX:+UseConcMarkSweepGC -Djava.awt.headless=true -jar ./runners/viatraEiq_batch_clientServer.jar  
 echo "####################################################################"
 echo "RUNNING FROM SCRIPT: ViatraEiq_publishSubscribe"
-java -Xmx12288m -XX:+UseConcMarkSweepGC -Djava.awt.headless=true -jar ./runners/viatraEiq_batch/publishSubscriber.jar  
+java -Xmx12288m -XX:+UseConcMarkSweepGC -Djava.awt.headless=true -jar ./runners/viatraEiq_batch_publishSubscriber.jar  
 echo "####################################################################"
 echo "RUNNING FROM SCRIPT: Xtend_clientServer"
 java -Xmx12288m -XX:+UseConcMarkSweepGC -Djava.awt.headless=true -jar ./runners/Xtend_batch_clientServer.jar  
