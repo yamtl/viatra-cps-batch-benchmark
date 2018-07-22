@@ -37,8 +37,8 @@ class Cps2DepRunner_emftvm_full_publishSubscribe extends FullBenchmarkRunner {
 	}
 	
 	override getIterations() {
-//		#[1, 1, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384]
-		#[1, 8192]
+		#[1, 1, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384]
+//		#[1, 8192]
 	}
 
 	def static void main(String[] args) {

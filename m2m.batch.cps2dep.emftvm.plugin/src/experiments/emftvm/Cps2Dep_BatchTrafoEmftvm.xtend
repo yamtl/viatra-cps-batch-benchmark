@@ -169,9 +169,6 @@ class Cps2Dep_BatchTrafoEmftvm  {
 			val Model inModel = EmftvmFactory.eINSTANCE.createModel();
 			
 			
-			
-			
-			
 //			inModel.setResource(rs.getResource(URI.createFileURI(inputModelPath), true));
 			
 			// ARTUR

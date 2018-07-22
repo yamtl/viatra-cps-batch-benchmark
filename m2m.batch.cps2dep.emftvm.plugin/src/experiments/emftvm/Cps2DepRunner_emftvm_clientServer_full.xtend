@@ -25,7 +25,7 @@ import org.eclipse.m2m.atl.emftvm.util.DefaultModuleResolver
 import org.eclipse.m2m.atl.emftvm.util.ModuleResolver
 import org.eclipse.m2m.atl.emftvm.util.TimingData
 
-class Cps2DepRunner_emftvm_full_clientServer extends FullBenchmarkRunner {
+class Cps2DepRunner_emftvm_clientServer_full extends FullBenchmarkRunner {
 	var ExecEnv env
 	var ResourceSet rs
 	var TimingData td 
@@ -37,12 +37,13 @@ class Cps2DepRunner_emftvm_full_clientServer extends FullBenchmarkRunner {
 	
 	override getIterations() {
 //		#[1, 1, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384]
-		#[1, 8192]
+		#[1, 1, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192]
+//		#[1, 8192]
 	}
 
 	def static void main(String[] args) {
 		
-		val runner = new Cps2DepRunner_emftvm_full_clientServer
+		val runner = new Cps2DepRunner_emftvm_clientServer_full
 		runner.runBenchmark(10)
 	
 	} 
