@@ -4,23 +4,22 @@ import experiments.utils.BenchmarkRunner
 import m2m.batch.cps2dep.atl2010.files.Cps2Dep_atl
 import org.eclipse.core.runtime.NullProgressMonitor
 
-class Cps2DepRunner_Atl2010 extends BenchmarkRunner {
+class Cps2DepRunner_Atl2010_clientServer extends BenchmarkRunner {
 	var Cps2Dep_atl runner
 	var String fileNameSuffix
 		
 	override getIdentifier() {
-//		"cps2dep_clientServer_atl2010"
-		"cps2dep_publishSubscribe_atl2010"
+		"cps2dep_clientServer_atl2010"
 	}
 	
 	override getIterations() {
 //		#[1, 1, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384]
-		#[1, 1, 8, 16, 32, 64, 128, 256]
-//		#[1]
+//		#[1, 1, 8, 16, 32, 64, 128, 256]
+		#[1]
 	}
 
 	def static void main(String[] args) {
-		val runner = new Cps2DepRunner_Atl2010
+		val runner = new Cps2DepRunner_Atl2010_clientServer
 		runner.runBenchmark
 	} 
     
@@ -30,8 +29,8 @@ class Cps2DepRunner_Atl2010 extends BenchmarkRunner {
 	
 	override doLoad(String fileNameSuffix) {
 		this.fileNameSuffix = fileNameSuffix
-//		var String inputModelPath = '''../m2m.batch.data/cps2dep/clientServer/cps/clientServer_«fileNameSuffix».cyberphysicalsystem.xmi'''   
-		var String inputModelPath = '''../m2m.batch.data/cps2dep/publishSubscribe/cps/publishSubscribe_«fileNameSuffix».cyberphysicalsystem.xmi'''   
+		var String inputModelPath = '''../m2m.batch.data/cps2dep/clientServer/cps/clientServer_«fileNameSuffix».cyberphysicalsystem.xmi'''   
+//		var String inputModelPath = '''../m2m.batch.data/cps2dep/publishSubscribe/cps/publishSubscribe_«fileNameSuffix».cyberphysicalsystem.xmi'''   
 		runner = new Cps2Dep_atl() 
 		runner.loadModels(inputModelPath)  
 	}
@@ -41,7 +40,8 @@ class Cps2DepRunner_Atl2010 extends BenchmarkRunner {
 	}
 	
 	override doSave(String iter) {
-		val outputModelPath = '''../m2m.batch.data/cps2dep/publishSubscribe/deployment/atl2010/publishSubscribe_«fileNameSuffix».deployment.xmi'''
+		val outputModelPath = '''../m2m.batch.data/cps2dep/clientServer/deployment/atl2010/clientServer_«fileNameSuffix».deployment.xmi'''
+//		val outputModelPath = '''../m2m.batch.data/cps2dep/publishSubscribe/deployment/atl2010/publishSubscribe_«fileNameSuffix».deployment.xmi'''
 		runner.saveModels(outputModelPath)
 	}
 	

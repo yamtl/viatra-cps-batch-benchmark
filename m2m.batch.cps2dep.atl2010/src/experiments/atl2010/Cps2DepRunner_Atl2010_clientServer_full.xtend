@@ -4,7 +4,7 @@ import experiments.utils.FullBenchmarkRunner
 import m2m.batch.cps2dep.atl2010.files.Cps2Dep_atl
 import org.eclipse.core.runtime.NullProgressMonitor
 
-class Cps2DepRunner_Atl2010_full_clientServer extends FullBenchmarkRunner {
+class Cps2DepRunner_Atl2010_clientServer_full extends FullBenchmarkRunner {
 	var Cps2Dep_atl runner
 	var String fileNameSuffix
 		
@@ -14,12 +14,12 @@ class Cps2DepRunner_Atl2010_full_clientServer extends FullBenchmarkRunner {
 	
 	override getIterations() {
 //		#[1, 1, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384]
-//		#[1, 1, 8, 16, 32, 64, 128, 256, 512]
-		#[1, 256, 512]
+		#[1, 1, 8, 16, 32, 64, 128, 256, 512]
+//		#[1, 256, 512]
 	}
 
 	def static void main(String[] args) {
-		val runner = new Cps2DepRunner_Atl2010_full_clientServer
+		val runner = new Cps2DepRunner_Atl2010_clientServer_full
 		runner.runBenchmark(10)
 	} 
     

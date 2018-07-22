@@ -4,7 +4,7 @@ import experiments.utils.FullBenchmarkRunner
 import m2m.batch.cps2dep.atl2010.files.Cps2Dep_atl
 import org.eclipse.core.runtime.NullProgressMonitor
 
-class Cps2DepRunner_Atl2010_full_publishSubscribe extends FullBenchmarkRunner {
+class Cps2DepRunner_Atl2010_publishSubscribe_full extends FullBenchmarkRunner {
 	var Cps2Dep_atl runner
 	var String fileNameSuffix
 		
@@ -19,7 +19,7 @@ class Cps2DepRunner_Atl2010_full_publishSubscribe extends FullBenchmarkRunner {
 	}
 
 	def static void main(String[] args) {
-		val runner = new Cps2DepRunner_Atl2010_full_publishSubscribe
+		val runner = new Cps2DepRunner_Atl2010_publishSubscribe_full
 		runner.runBenchmark(10)
 	} 
     

@@ -4,15 +4,15 @@ import org.eclipse.xtend.lib.annotations.Accessors
 
 class PerformanceResult {
 	@Accessors
-	var long loadTime
+	var double loadTime
 	@Accessors
-	var long initTime
+	var double initTime
 	@Accessors
-	var long trafoTime
+	var double trafoTime
 	@Accessors
-	var long saveTime
+	var double saveTime
 	
-	new (long loadTime, long initTime, long trafoTime, long saveTime) {
+	new (double loadTime, double initTime, double trafoTime, double saveTime) {
 		this.loadTime = loadTime
 		this.initTime = initTime
 		this.trafoTime = trafoTime

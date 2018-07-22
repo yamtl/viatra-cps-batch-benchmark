@@ -122,10 +122,8 @@ public class Cps2Dep_atl {
 		injector.inject(cpsMetamodel, getMetamodelUri("CPS"));
 	 	IReferenceModel depMetamodel = factory.newReferenceModel();
 		injector.inject(depMetamodel, getMetamodelUri("DEP"));
-		
 		this.inModel = factory.newModel(cpsMetamodel);
 		injector.inject(inModel, inModelPath);
-		
 		this.outModel = factory.newModel(depMetamodel);
 	}
 	
