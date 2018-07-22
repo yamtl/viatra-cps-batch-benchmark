@@ -3,7 +3,6 @@ package experiments.eiq
 import experiments.utils.FullBenchmarkRunner
 import java.io.File
 import java.io.IOException
-import java.util.Collections
 import java.util.HashMap
 import java.util.Map
 import org.eclipse.emf.common.util.URI
@@ -26,34 +25,37 @@ import org.eclipse.viatra.query.runtime.api.AdvancedViatraQueryEngine
 import org.eclipse.viatra.query.runtime.emf.EMFScope
 import org.eclipse.viatra.query.runtime.matchers.backend.QueryEvaluationHint
 
-class Cps2DepRunner_ViatraEiq_clientServer_full extends FullBenchmarkRunner {
+class Cps2DepRunner_ViatraEiq_simpleScaling_full extends FullBenchmarkRunner {
 	var CPS2DeploymentBatchTransformationEiq xform 
     var CPSToDeployment cps2dep
     
 	override getIdentifier() {
-		"cps2dep_clientServer_viatraEiq"
+//		"cps2dep_viatraEiq"
+		"cps2dep_simpleScaling_viatraEiq"
 	}
 	
 	override getIterations() {
-		#[1, 1, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384]
 //		#[1, 1, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768]
-//		#[1, 32768]
+		#[1, 1, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192]
+//		#[1]
 	}
 
 	def static void main(String[] args) {
-		val runner = new Cps2DepRunner_ViatraEiq_clientServer_full
+		val runner = new Cps2DepRunner_ViatraEiq_simpleScaling_full
 		runner.runBenchmark(10)
 	} 
 	
 	override doLoad(String iteration) {
 		doStandaloneEMFSetup()
 		
-		var String inputModelPath = '''../m2m.batch.data/cps2dep/clientServer/cps'''
-		var String outputModelPath = '''../m2m.batch.data/cps2dep/clientServer/deployment/viatraEiq'''
+//		var String inputModelPath = '''../m2m.batch.data/cps2dep/clientServer/cps'''
+//		var String outputModelPath = '''../m2m.batch.data/cps2dep/clientServer/deployment/viatra'''
+		var String inputModelPath = '''../m2m.batch.data/cps2dep/simpleScaling'''
+		var String outputModelPath = '''../m2m.batch.data/cps2dep/simpleScaling/deployment/viatra'''
 
 		cps2dep = preparePersistedCPSModel(
 			URI.createFileURI(new File(inputModelPath).absolutePath),
-			'''clientServer_«iteration»''',
+			'''simpleScaling_«iteration»''',
 			URI.createFileURI(new File(outputModelPath).absolutePath)
 		)
 	}
@@ -148,7 +150,7 @@ class Cps2DepRunner_ViatraEiq_clientServer_full extends FullBenchmarkRunner {
 		trcRes.contents += cps2dep
 		cps2dep
 	}
-	
+
 	
 } 
  

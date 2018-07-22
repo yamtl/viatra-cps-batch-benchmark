@@ -1,6 +1,6 @@
 package experiments.eiq
 
-import experiments.utils.FullBenchmarkRunner
+import experiments.utils.BenchmarkRunner
 import java.io.File
 import java.io.IOException
 import java.util.Collections
@@ -25,24 +25,26 @@ import org.eclipse.viatra.examples.cps.xform.m2m.batch.eiq.CPS2DeploymentBatchTr
 import org.eclipse.viatra.query.runtime.api.AdvancedViatraQueryEngine
 import org.eclipse.viatra.query.runtime.emf.EMFScope
 import org.eclipse.viatra.query.runtime.matchers.backend.QueryEvaluationHint
+import org.eclipse.viatra.examples.cps.generator.utils.CPSModelBuilderUtil
 
-class Cps2DepRunner_ViatraEiq_clientServer_full extends FullBenchmarkRunner {
+class Cps2DepRunner_ViatraEiq_clientServer_modification extends BenchmarkRunner {
 	var CPS2DeploymentBatchTransformationEiq xform 
     var CPSToDeployment cps2dep
+    extension CPSModelBuilderUtil builderUtil = new CPSModelBuilderUtil
     
 	override getIdentifier() {
-		"cps2dep_clientServer_viatraEiq"
+		"cps2dep_clientServer_viatraEiq_modification"
 	}
 	
 	override getIterations() {
-		#[1, 1, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384]
 //		#[1, 1, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768]
-//		#[1, 32768]
+//		#[1, 1, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192]
+		#[1]
 	}
 
 	def static void main(String[] args) {
-		val runner = new Cps2DepRunner_ViatraEiq_clientServer_full
-		runner.runBenchmark(10)
+		val runner = new Cps2DepRunner_ViatraEiq_clientServer_modification
+		runner.runBenchmark
 	} 
 	
 	override doLoad(String iteration) {
@@ -50,6 +52,8 @@ class Cps2DepRunner_ViatraEiq_clientServer_full extends FullBenchmarkRunner {
 		
 		var String inputModelPath = '''../m2m.batch.data/cps2dep/clientServer/cps'''
 		var String outputModelPath = '''../m2m.batch.data/cps2dep/clientServer/deployment/viatraEiq'''
+//		var String inputModelPath = '''../m2m.batch.data/cps2dep/publishSubscribe/cps'''
+//		var String outputModelPath = '''../m2m.batch.data/cps2dep/publishSubscribe/deployment/viatra'''
 
 		cps2dep = preparePersistedCPSModel(
 			URI.createFileURI(new File(inputModelPath).absolutePath),
@@ -64,23 +68,27 @@ class Cps2DepRunner_ViatraEiq_clientServer_full extends FullBenchmarkRunner {
 		var QueryEvaluationHint tracesHint
 		val AdvancedViatraQueryEngine engine = AdvancedViatraQueryEngine.createUnmanagedEngine(new EMFScope(cps2dep.eResource.resourceSet));
 		xform = new CPS2DeploymentBatchTransformationEiq(cps2dep, engine, hint, tracesHint)
-	}
-	
-	override doTransformation() {
 		xform.execute
 	}
 	
+	override doTransformation() {
+		val appType = cps2dep.cps.appTypes.findFirst[it.identifier.contains("Client")]
+		val hostInstance = cps2dep.cps.hostTypes.findFirst[it.identifier.contains("client")].instances.head
+		val appID = "new.app.instance" + "_NEW" // nextModificationIndex 
+		appType.prepareApplicationInstanceWithId(appID, hostInstance)
+	}
+	
 	override doSave(String iteration) {
-//		try {
-//	      cps2dep.deployment.eResource.save(Collections.EMPTY_MAP);
-//	    } catch (IOException e) {
-//	      e.printStackTrace();
-//	    }
-//		try {
-//	      cps2dep.eResource.save(Collections.EMPTY_MAP);
-//	    } catch (IOException e) {
-//	      e.printStackTrace();
-//	    }
+		try {
+	      cps2dep.deployment.eResource.save(Collections.EMPTY_MAP);
+	    } catch (IOException e) {
+	      e.printStackTrace();
+	    }
+		try {
+	      cps2dep.eResource.save(Collections.EMPTY_MAP);
+	    } catch (IOException e) {
+	      e.printStackTrace();
+	    }
 	}
 	
 		
@@ -128,8 +136,8 @@ class Cps2DepRunner_ViatraEiq_clientServer_full extends FullBenchmarkRunner {
 		}
 
 		val targetModelNameURI = targetUri.appendSegment(modelName)
-		val depRes = rs.createResource(targetModelNameURI.appendFileExtension("deployment.xmi"))
-		val trcRes = rs.createResource(targetModelNameURI.appendFileExtension("traceability.xmi"))
+		val depRes = rs.createResource(targetModelNameURI.appendFileExtension("deployment.modification.xmi"))
+		val trcRes = rs.createResource(targetModelNameURI.appendFileExtension("traceability.modification.xmi"))
 		
 		// Artur: to load the model
 //		val cps = createCyberPhysicalSystem => [
@@ -148,7 +156,7 @@ class Cps2DepRunner_ViatraEiq_clientServer_full extends FullBenchmarkRunner {
 		trcRes.contents += cps2dep
 		cps2dep
 	}
-	
+
 	
 } 
  

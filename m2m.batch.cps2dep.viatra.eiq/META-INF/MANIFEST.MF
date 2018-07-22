@@ -9,6 +9,8 @@ Bundle-Localization: plugin
 Export-Package: org.eclipse.viatra.examples.cps.cyberPhysicalSystem,
   org.eclipse.viatra.examples.cps.cyberPhysicalSystem.impl,
   org.eclipse.viatra.examples.cps.cyberPhysicalSystem.util,
+  org.eclipse.viatra.examples.cps.generator.queries,
+  org.eclipse.viatra.examples.cps.generator.queries.util,
   org.eclipse.viatra.examples.cps.xform.m2m.batch.eiq.queries,
   org.eclipse.viatra.examples.cps.xform.m2m.batch.eiq.queries.util
 Require-Bundle: org.eclipse.core.runtime,

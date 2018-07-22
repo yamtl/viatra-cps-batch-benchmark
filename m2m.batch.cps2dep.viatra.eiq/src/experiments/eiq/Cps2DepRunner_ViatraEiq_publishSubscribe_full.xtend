@@ -26,7 +26,7 @@ import org.eclipse.viatra.query.runtime.api.AdvancedViatraQueryEngine
 import org.eclipse.viatra.query.runtime.emf.EMFScope
 import org.eclipse.viatra.query.runtime.matchers.backend.QueryEvaluationHint
 
-class Cps2DepRunner_ViatraEiq_full_publishSubscribe extends FullBenchmarkRunner {
+class Cps2DepRunner_ViatraEiq_publishSubscribe_full extends FullBenchmarkRunner {
 	var CPS2DeploymentBatchTransformationEiq xform 
     var CPSToDeployment cps2dep
     
@@ -35,13 +35,13 @@ class Cps2DepRunner_ViatraEiq_full_publishSubscribe extends FullBenchmarkRunner 
 	}
 	
 	override getIterations() {
-//		#[1, 1, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384]
+		#[1, 1, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384]
 //		#[1, 1, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768]
-		#[1, 32768]
+//		#[1, 32768]
 	}
 
 	def static void main(String[] args) {
-		val runner = new Cps2DepRunner_ViatraEiq_full_publishSubscribe
+		val runner = new Cps2DepRunner_ViatraEiq_publishSubscribe_full
 		runner.runBenchmark(10)
 	} 
 	

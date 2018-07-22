@@ -26,7 +26,7 @@ import org.eclipse.viatra.query.runtime.api.AdvancedViatraQueryEngine
 import org.eclipse.viatra.query.runtime.emf.EMFScope
 import org.eclipse.viatra.query.runtime.matchers.backend.QueryEvaluationHint
 
-class Cps2DepRunner_ViatraEiq extends BenchmarkRunner {
+class Cps2DepRunner_ViatraEiq_publishSubscribe extends BenchmarkRunner {
 	var CPS2DeploymentBatchTransformationEiq xform 
     var CPSToDeployment cps2dep
     
@@ -42,7 +42,7 @@ class Cps2DepRunner_ViatraEiq extends BenchmarkRunner {
 	}
 
 	def static void main(String[] args) {
-		val runner = new Cps2DepRunner_ViatraEiq
+		val runner = new Cps2DepRunner_ViatraEiq_publishSubscribe
 		runner.runBenchmark
 	} 
 	
