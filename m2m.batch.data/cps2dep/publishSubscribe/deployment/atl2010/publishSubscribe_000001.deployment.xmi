@@ -76,139 +76,139 @@
       </behavior>
     </applications>
   </hosts>
-  <hosts ip="simple.cps.host.client0.inst0"/>
-  <hosts ip="simple.cps.host.client0.inst1"/>
-  <hosts ip="simple.cps.host.client0.inst2">
-    <applications id="simple.cps.app.ClientAppClass4.inst0">
-      <behavior description="simple.cps.app.ClientAppClass4.sm4" current="//@hosts.3/@applications.0/@behavior/@states.0">
-        <states description="simple.cps.app.ClientAppClass4.sm4.s0" outgoing="//@hosts.3/@applications.0/@behavior/@transitions.0 //@hosts.3/@applications.0/@behavior/@transitions.1"/>
-        <states description="simple.cps.app.ClientAppClass4.sm4.s1" outgoing="//@hosts.3/@applications.0/@behavior/@transitions.2"/>
-        <states description="simple.cps.app.ClientAppClass4.sm4.s2" outgoing="//@hosts.3/@applications.0/@behavior/@transitions.3 //@hosts.3/@applications.0/@behavior/@transitions.4"/>
-        <transitions description="simple.cps.app.ClientAppClass4.sm4.s0.t1" to="//@hosts.3/@applications.0/@behavior/@states.1"/>
-        <transitions description="simple.cps.app.ClientAppClass4.sm4.s0.t2" to="//@hosts.3/@applications.0/@behavior/@states.1"/>
-        <transitions description="simple.cps.app.ClientAppClass4.sm4.s1.t0" to="//@hosts.3/@applications.0/@behavior/@states.0"/>
-        <transitions description="simple.cps.app.ClientAppClass4.sm4.s2.t3" to="//@hosts.3/@applications.0/@behavior/@states.0"/>
-        <transitions description="simple.cps.app.ClientAppClass4.sm4.s2.t4" to="//@hosts.3/@applications.0/@behavior/@states.0"/>
-      </behavior>
-    </applications>
-  </hosts>
-  <hosts ip="simple.cps.host.client0.inst3">
-    <applications id="simple.cps.app.ClientAppClass1.inst0">
-      <behavior description="simple.cps.app.ClientAppClass1.sm1" current="//@hosts.4/@applications.0/@behavior/@states.0">
-        <states description="simple.cps.app.ClientAppClass1.sm1.s0" outgoing="//@hosts.4/@applications.0/@behavior/@transitions.0 //@hosts.4/@applications.0/@behavior/@transitions.1 //@hosts.4/@applications.0/@behavior/@transitions.2"/>
-        <states description="simple.cps.app.ClientAppClass1.sm1.s1" outgoing="//@hosts.4/@applications.0/@behavior/@transitions.3"/>
-        <states description="simple.cps.app.ClientAppClass1.sm1.s2" outgoing="//@hosts.4/@applications.0/@behavior/@transitions.4"/>
-        <transitions description="simple.cps.app.ClientAppClass1.sm1.s0.t0" to="//@hosts.4/@applications.0/@behavior/@states.2"/>
-        <transitions description="simple.cps.app.ClientAppClass1.sm1.s0.t2" to="//@hosts.4/@applications.0/@behavior/@states.2"/>
-        <transitions description="simple.cps.app.ClientAppClass1.sm1.s0.t3" to="//@hosts.4/@applications.0/@behavior/@states.2"/>
-        <transitions description="simple.cps.app.ClientAppClass1.sm1.s1.t1" to="//@hosts.4/@applications.0/@behavior/@states.0"/>
-        <transitions description="simple.cps.app.ClientAppClass1.sm1.s2.t4" to="//@hosts.4/@applications.0/@behavior/@states.0"/>
-      </behavior>
-    </applications>
-    <applications id="simple.cps.app.ClientAppClass6.inst0">
-      <behavior description="simple.cps.app.ClientAppClass6.sm6" current="//@hosts.4/@applications.1/@behavior/@states.0">
-        <states description="simple.cps.app.ClientAppClass6.sm6.s0" outgoing="//@hosts.4/@applications.1/@behavior/@transitions.0"/>
-        <states description="simple.cps.app.ClientAppClass6.sm6.s1" outgoing="//@hosts.4/@applications.1/@behavior/@transitions.1 //@hosts.4/@applications.1/@behavior/@transitions.2"/>
-        <states description="simple.cps.app.ClientAppClass6.sm6.s2" outgoing="//@hosts.4/@applications.1/@behavior/@transitions.3 //@hosts.4/@applications.1/@behavior/@transitions.4"/>
-        <transitions description="simple.cps.app.ClientAppClass6.sm6.s0.t2" to="//@hosts.4/@applications.1/@behavior/@states.2"/>
-        <transitions description="simple.cps.app.ClientAppClass6.sm6.s1.t1" to="//@hosts.4/@applications.1/@behavior/@states.2"/>
-        <transitions description="simple.cps.app.ClientAppClass6.sm6.s1.t3" to="//@hosts.4/@applications.1/@behavior/@states.0"/>
-        <transitions description="simple.cps.app.ClientAppClass6.sm6.s2.t0" to="//@hosts.4/@applications.1/@behavior/@states.1"/>
-        <transitions description="simple.cps.app.ClientAppClass6.sm6.s2.t4" to="//@hosts.4/@applications.1/@behavior/@states.0"/>
-      </behavior>
-    </applications>
-  </hosts>
-  <hosts ip="simple.cps.host.client0.inst4">
-    <applications id="simple.cps.app.ClientAppClass2.inst0">
-      <behavior description="simple.cps.app.ClientAppClass2.sm2" current="//@hosts.5/@applications.0/@behavior/@states.0">
-        <states description="simple.cps.app.ClientAppClass2.sm2.s0" outgoing="//@hosts.5/@applications.0/@behavior/@transitions.0 //@hosts.5/@applications.0/@behavior/@transitions.1 //@hosts.5/@applications.0/@behavior/@transitions.2"/>
-        <states description="simple.cps.app.ClientAppClass2.sm2.s1"/>
-        <states description="simple.cps.app.ClientAppClass2.sm2.s2" outgoing="//@hosts.5/@applications.0/@behavior/@transitions.3 //@hosts.5/@applications.0/@behavior/@transitions.4"/>
-        <transitions description="simple.cps.app.ClientAppClass2.sm2.s0.t1" to="//@hosts.5/@applications.0/@behavior/@states.1"/>
-        <transitions description="simple.cps.app.ClientAppClass2.sm2.s0.t2" to="//@hosts.5/@applications.0/@behavior/@states.2"/>
-        <transitions description="simple.cps.app.ClientAppClass2.sm2.s0.t3" to="//@hosts.5/@applications.0/@behavior/@states.1"/>
-        <transitions description="simple.cps.app.ClientAppClass2.sm2.s2.t0" to="//@hosts.5/@applications.0/@behavior/@states.1"/>
-        <transitions description="simple.cps.app.ClientAppClass2.sm2.s2.t4" to="//@hosts.5/@applications.0/@behavior/@states.0"/>
-      </behavior>
-    </applications>
-    <applications id="simple.cps.app.ClientAppClass0.inst0">
-      <behavior description="simple.cps.app.ClientAppClass0.sm0" current="//@hosts.5/@applications.1/@behavior/@states.0">
-        <states description="simple.cps.app.ClientAppClass0.sm0.s0" outgoing="//@hosts.5/@applications.1/@behavior/@transitions.0 //@hosts.5/@applications.1/@behavior/@transitions.1"/>
-        <states description="simple.cps.app.ClientAppClass0.sm0.s1"/>
-        <states description="simple.cps.app.ClientAppClass0.sm0.s2" outgoing="//@hosts.5/@applications.1/@behavior/@transitions.2 //@hosts.5/@applications.1/@behavior/@transitions.3 //@hosts.5/@applications.1/@behavior/@transitions.4"/>
-        <transitions description="simple.cps.app.ClientAppClass0.sm0.s0.t2" to="//@hosts.5/@applications.1/@behavior/@states.2"/>
-        <transitions description="simple.cps.app.ClientAppClass0.sm0.s0.t4" to="//@hosts.5/@applications.1/@behavior/@states.1"/>
-        <transitions description="simple.cps.app.ClientAppClass0.sm0.s2.t0" to="//@hosts.5/@applications.1/@behavior/@states.1"/>
-        <transitions description="simple.cps.app.ClientAppClass0.sm0.s2.t1" to="//@hosts.5/@applications.1/@behavior/@states.1"/>
-        <transitions description="simple.cps.app.ClientAppClass0.sm0.s2.t3" to="//@hosts.5/@applications.1/@behavior/@states.0"/>
-      </behavior>
-    </applications>
-  </hosts>
-  <hosts ip="simple.cps.host.client0.inst5">
-    <applications id="simple.cps.app.ClientAppClass8.inst0">
-      <behavior description="simple.cps.app.ClientAppClass8.sm8" current="//@hosts.6/@applications.0/@behavior/@states.0">
-        <states description="simple.cps.app.ClientAppClass8.sm8.s0" outgoing="//@hosts.6/@applications.0/@behavior/@transitions.0"/>
-        <states description="simple.cps.app.ClientAppClass8.sm8.s1" outgoing="//@hosts.6/@applications.0/@behavior/@transitions.1 //@hosts.6/@applications.0/@behavior/@transitions.2"/>
-        <states description="simple.cps.app.ClientAppClass8.sm8.s2" outgoing="//@hosts.6/@applications.0/@behavior/@transitions.3 //@hosts.6/@applications.0/@behavior/@transitions.4"/>
-        <transitions description="simple.cps.app.ClientAppClass8.sm8.s0.t0" to="//@hosts.6/@applications.0/@behavior/@states.2"/>
-        <transitions description="simple.cps.app.ClientAppClass8.sm8.s1.t1" to="//@hosts.6/@applications.0/@behavior/@states.2"/>
-        <transitions description="simple.cps.app.ClientAppClass8.sm8.s1.t3" to="//@hosts.6/@applications.0/@behavior/@states.0"/>
-        <transitions description="simple.cps.app.ClientAppClass8.sm8.s2.t2" to="//@hosts.6/@applications.0/@behavior/@states.0"/>
-        <transitions description="simple.cps.app.ClientAppClass8.sm8.s2.t4" to="//@hosts.6/@applications.0/@behavior/@states.0"/>
-      </behavior>
-    </applications>
-  </hosts>
-  <hosts ip="simple.cps.host.client0.inst6"/>
-  <hosts ip="simple.cps.host.client0.inst7"/>
-  <hosts ip="simple.cps.host.client0.inst8">
-    <applications id="simple.cps.app.ClientAppClass3.inst0">
-      <behavior description="simple.cps.app.ClientAppClass3.sm3" current="//@hosts.9/@applications.0/@behavior/@states.0">
-        <states description="simple.cps.app.ClientAppClass3.sm3.s0" outgoing="//@hosts.9/@applications.0/@behavior/@transitions.0"/>
-        <states description="simple.cps.app.ClientAppClass3.sm3.s1" outgoing="//@hosts.9/@applications.0/@behavior/@transitions.1 //@hosts.9/@applications.0/@behavior/@transitions.2"/>
-        <states description="simple.cps.app.ClientAppClass3.sm3.s2" outgoing="//@hosts.9/@applications.0/@behavior/@transitions.3 //@hosts.9/@applications.0/@behavior/@transitions.4"/>
-        <transitions description="simple.cps.app.ClientAppClass3.sm3.s0.t3" to="//@hosts.9/@applications.0/@behavior/@states.2"/>
-        <transitions description="simple.cps.app.ClientAppClass3.sm3.s1.t2" to="//@hosts.9/@applications.0/@behavior/@states.2"/>
-        <transitions description="simple.cps.app.ClientAppClass3.sm3.s1.t4" to="//@hosts.9/@applications.0/@behavior/@states.0"/>
-        <transitions description="simple.cps.app.ClientAppClass3.sm3.s2.t0" to="//@hosts.9/@applications.0/@behavior/@states.0"/>
-        <transitions description="simple.cps.app.ClientAppClass3.sm3.s2.t1" to="//@hosts.9/@applications.0/@behavior/@states.0"/>
-      </behavior>
-    </applications>
-    <applications id="simple.cps.app.ClientAppClass7.inst0">
-      <behavior description="simple.cps.app.ClientAppClass7.sm7" current="//@hosts.9/@applications.1/@behavior/@states.0">
-        <states description="simple.cps.app.ClientAppClass7.sm7.s0"/>
-        <states description="simple.cps.app.ClientAppClass7.sm7.s1" outgoing="//@hosts.9/@applications.1/@behavior/@transitions.0 //@hosts.9/@applications.1/@behavior/@transitions.1"/>
-        <states description="simple.cps.app.ClientAppClass7.sm7.s2" outgoing="//@hosts.9/@applications.1/@behavior/@transitions.2 //@hosts.9/@applications.1/@behavior/@transitions.3 //@hosts.9/@applications.1/@behavior/@transitions.4"/>
-        <transitions description="simple.cps.app.ClientAppClass7.sm7.s1.t0" to="//@hosts.9/@applications.1/@behavior/@states.2"/>
-        <transitions description="simple.cps.app.ClientAppClass7.sm7.s1.t1" to="//@hosts.9/@applications.1/@behavior/@states.0"/>
-        <transitions description="simple.cps.app.ClientAppClass7.sm7.s2.t2" to="//@hosts.9/@applications.1/@behavior/@states.0"/>
-        <transitions description="simple.cps.app.ClientAppClass7.sm7.s2.t3" to="//@hosts.9/@applications.1/@behavior/@states.0"/>
-        <transitions description="simple.cps.app.ClientAppClass7.sm7.s2.t4" to="//@hosts.9/@applications.1/@behavior/@states.1"/>
+  <hosts ip="simple.cps.host.client0.inst0">
+    <applications id="simple.cps.app.ClientAppClass5.inst0">
+      <behavior description="simple.cps.app.ClientAppClass5.sm5" current="//@hosts.1/@applications.0/@behavior/@states.0">
+        <states description="simple.cps.app.ClientAppClass5.sm5.s0" outgoing="//@hosts.1/@applications.0/@behavior/@transitions.0 //@hosts.1/@applications.0/@behavior/@transitions.1"/>
+        <states description="simple.cps.app.ClientAppClass5.sm5.s1" outgoing="//@hosts.1/@applications.0/@behavior/@transitions.2 //@hosts.1/@applications.0/@behavior/@transitions.3"/>
+        <states description="simple.cps.app.ClientAppClass5.sm5.s2" outgoing="//@hosts.1/@applications.0/@behavior/@transitions.4"/>
+        <transitions description="simple.cps.app.ClientAppClass5.sm5.s0.t1" to="//@hosts.1/@applications.0/@behavior/@states.1"/>
+        <transitions description="simple.cps.app.ClientAppClass5.sm5.s0.t2" to="//@hosts.1/@applications.0/@behavior/@states.2"/>
+        <transitions description="simple.cps.app.ClientAppClass5.sm5.s1.t0" to="//@hosts.1/@applications.0/@behavior/@states.2"/>
+        <transitions description="simple.cps.app.ClientAppClass5.sm5.s1.t4" to="//@hosts.1/@applications.0/@behavior/@states.0"/>
+        <transitions description="simple.cps.app.ClientAppClass5.sm5.s2.t3" to="//@hosts.1/@applications.0/@behavior/@states.0"/>
       </behavior>
     </applications>
     <applications id="simple.cps.app.ClientAppClass9.inst0">
-      <behavior description="simple.cps.app.ClientAppClass9.sm9" current="//@hosts.9/@applications.2/@behavior/@states.0">
-        <states description="simple.cps.app.ClientAppClass9.sm9.s0" outgoing="//@hosts.9/@applications.2/@behavior/@transitions.0 //@hosts.9/@applications.2/@behavior/@transitions.1"/>
-        <states description="simple.cps.app.ClientAppClass9.sm9.s1" outgoing="//@hosts.9/@applications.2/@behavior/@transitions.2"/>
-        <states description="simple.cps.app.ClientAppClass9.sm9.s2" outgoing="//@hosts.9/@applications.2/@behavior/@transitions.3 //@hosts.9/@applications.2/@behavior/@transitions.4"/>
-        <transitions description="simple.cps.app.ClientAppClass9.sm9.s0.t1" to="//@hosts.9/@applications.2/@behavior/@states.1"/>
-        <transitions description="simple.cps.app.ClientAppClass9.sm9.s0.t3" to="//@hosts.9/@applications.2/@behavior/@states.1"/>
-        <transitions description="simple.cps.app.ClientAppClass9.sm9.s1.t2" to="//@hosts.9/@applications.2/@behavior/@states.0"/>
-        <transitions description="simple.cps.app.ClientAppClass9.sm9.s2.t0" to="//@hosts.9/@applications.2/@behavior/@states.1"/>
-        <transitions description="simple.cps.app.ClientAppClass9.sm9.s2.t4" to="//@hosts.9/@applications.2/@behavior/@states.1"/>
-      </behavior>
-    </applications>
-    <applications id="simple.cps.app.ClientAppClass5.inst0">
-      <behavior description="simple.cps.app.ClientAppClass5.sm5" current="//@hosts.9/@applications.3/@behavior/@states.0">
-        <states description="simple.cps.app.ClientAppClass5.sm5.s0" outgoing="//@hosts.9/@applications.3/@behavior/@transitions.0 //@hosts.9/@applications.3/@behavior/@transitions.1"/>
-        <states description="simple.cps.app.ClientAppClass5.sm5.s1" outgoing="//@hosts.9/@applications.3/@behavior/@transitions.2 //@hosts.9/@applications.3/@behavior/@transitions.3"/>
-        <states description="simple.cps.app.ClientAppClass5.sm5.s2" outgoing="//@hosts.9/@applications.3/@behavior/@transitions.4"/>
-        <transitions description="simple.cps.app.ClientAppClass5.sm5.s0.t1" to="//@hosts.9/@applications.3/@behavior/@states.1"/>
-        <transitions description="simple.cps.app.ClientAppClass5.sm5.s0.t2" to="//@hosts.9/@applications.3/@behavior/@states.2"/>
-        <transitions description="simple.cps.app.ClientAppClass5.sm5.s1.t0" to="//@hosts.9/@applications.3/@behavior/@states.2"/>
-        <transitions description="simple.cps.app.ClientAppClass5.sm5.s1.t4" to="//@hosts.9/@applications.3/@behavior/@states.0"/>
-        <transitions description="simple.cps.app.ClientAppClass5.sm5.s2.t3" to="//@hosts.9/@applications.3/@behavior/@states.0"/>
+      <behavior description="simple.cps.app.ClientAppClass9.sm9" current="//@hosts.1/@applications.1/@behavior/@states.0">
+        <states description="simple.cps.app.ClientAppClass9.sm9.s0" outgoing="//@hosts.1/@applications.1/@behavior/@transitions.0 //@hosts.1/@applications.1/@behavior/@transitions.1"/>
+        <states description="simple.cps.app.ClientAppClass9.sm9.s1" outgoing="//@hosts.1/@applications.1/@behavior/@transitions.2"/>
+        <states description="simple.cps.app.ClientAppClass9.sm9.s2" outgoing="//@hosts.1/@applications.1/@behavior/@transitions.3 //@hosts.1/@applications.1/@behavior/@transitions.4"/>
+        <transitions description="simple.cps.app.ClientAppClass9.sm9.s0.t1" to="//@hosts.1/@applications.1/@behavior/@states.1"/>
+        <transitions description="simple.cps.app.ClientAppClass9.sm9.s0.t3" to="//@hosts.1/@applications.1/@behavior/@states.1"/>
+        <transitions description="simple.cps.app.ClientAppClass9.sm9.s1.t2" to="//@hosts.1/@applications.1/@behavior/@states.0"/>
+        <transitions description="simple.cps.app.ClientAppClass9.sm9.s2.t0" to="//@hosts.1/@applications.1/@behavior/@states.1"/>
+        <transitions description="simple.cps.app.ClientAppClass9.sm9.s2.t4" to="//@hosts.1/@applications.1/@behavior/@states.1"/>
       </behavior>
     </applications>
   </hosts>
+  <hosts ip="simple.cps.host.client0.inst1">
+    <applications id="simple.cps.app.ClientAppClass1.inst0">
+      <behavior description="simple.cps.app.ClientAppClass1.sm1" current="//@hosts.2/@applications.0/@behavior/@states.0">
+        <states description="simple.cps.app.ClientAppClass1.sm1.s0" outgoing="//@hosts.2/@applications.0/@behavior/@transitions.0 //@hosts.2/@applications.0/@behavior/@transitions.1 //@hosts.2/@applications.0/@behavior/@transitions.2"/>
+        <states description="simple.cps.app.ClientAppClass1.sm1.s1" outgoing="//@hosts.2/@applications.0/@behavior/@transitions.3"/>
+        <states description="simple.cps.app.ClientAppClass1.sm1.s2" outgoing="//@hosts.2/@applications.0/@behavior/@transitions.4"/>
+        <transitions description="simple.cps.app.ClientAppClass1.sm1.s0.t0" to="//@hosts.2/@applications.0/@behavior/@states.2"/>
+        <transitions description="simple.cps.app.ClientAppClass1.sm1.s0.t2" to="//@hosts.2/@applications.0/@behavior/@states.2"/>
+        <transitions description="simple.cps.app.ClientAppClass1.sm1.s0.t3" to="//@hosts.2/@applications.0/@behavior/@states.2"/>
+        <transitions description="simple.cps.app.ClientAppClass1.sm1.s1.t1" to="//@hosts.2/@applications.0/@behavior/@states.0"/>
+        <transitions description="simple.cps.app.ClientAppClass1.sm1.s2.t4" to="//@hosts.2/@applications.0/@behavior/@states.0"/>
+      </behavior>
+    </applications>
+    <applications id="simple.cps.app.ClientAppClass4.inst0">
+      <behavior description="simple.cps.app.ClientAppClass4.sm4" current="//@hosts.2/@applications.1/@behavior/@states.0">
+        <states description="simple.cps.app.ClientAppClass4.sm4.s0" outgoing="//@hosts.2/@applications.1/@behavior/@transitions.0 //@hosts.2/@applications.1/@behavior/@transitions.1"/>
+        <states description="simple.cps.app.ClientAppClass4.sm4.s1" outgoing="//@hosts.2/@applications.1/@behavior/@transitions.2"/>
+        <states description="simple.cps.app.ClientAppClass4.sm4.s2" outgoing="//@hosts.2/@applications.1/@behavior/@transitions.3 //@hosts.2/@applications.1/@behavior/@transitions.4"/>
+        <transitions description="simple.cps.app.ClientAppClass4.sm4.s0.t1" to="//@hosts.2/@applications.1/@behavior/@states.1"/>
+        <transitions description="simple.cps.app.ClientAppClass4.sm4.s0.t2" to="//@hosts.2/@applications.1/@behavior/@states.1"/>
+        <transitions description="simple.cps.app.ClientAppClass4.sm4.s1.t0" to="//@hosts.2/@applications.1/@behavior/@states.0"/>
+        <transitions description="simple.cps.app.ClientAppClass4.sm4.s2.t3" to="//@hosts.2/@applications.1/@behavior/@states.0"/>
+        <transitions description="simple.cps.app.ClientAppClass4.sm4.s2.t4" to="//@hosts.2/@applications.1/@behavior/@states.0"/>
+      </behavior>
+    </applications>
+  </hosts>
+  <hosts ip="simple.cps.host.client0.inst2">
+    <applications id="simple.cps.app.ClientAppClass6.inst0">
+      <behavior description="simple.cps.app.ClientAppClass6.sm6" current="//@hosts.3/@applications.0/@behavior/@states.0">
+        <states description="simple.cps.app.ClientAppClass6.sm6.s0" outgoing="//@hosts.3/@applications.0/@behavior/@transitions.0"/>
+        <states description="simple.cps.app.ClientAppClass6.sm6.s1" outgoing="//@hosts.3/@applications.0/@behavior/@transitions.1 //@hosts.3/@applications.0/@behavior/@transitions.2"/>
+        <states description="simple.cps.app.ClientAppClass6.sm6.s2" outgoing="//@hosts.3/@applications.0/@behavior/@transitions.3 //@hosts.3/@applications.0/@behavior/@transitions.4"/>
+        <transitions description="simple.cps.app.ClientAppClass6.sm6.s0.t2" to="//@hosts.3/@applications.0/@behavior/@states.2"/>
+        <transitions description="simple.cps.app.ClientAppClass6.sm6.s1.t1" to="//@hosts.3/@applications.0/@behavior/@states.2"/>
+        <transitions description="simple.cps.app.ClientAppClass6.sm6.s1.t3" to="//@hosts.3/@applications.0/@behavior/@states.0"/>
+        <transitions description="simple.cps.app.ClientAppClass6.sm6.s2.t0" to="//@hosts.3/@applications.0/@behavior/@states.1"/>
+        <transitions description="simple.cps.app.ClientAppClass6.sm6.s2.t4" to="//@hosts.3/@applications.0/@behavior/@states.0"/>
+      </behavior>
+    </applications>
+    <applications id="simple.cps.app.ClientAppClass7.inst0">
+      <behavior description="simple.cps.app.ClientAppClass7.sm7" current="//@hosts.3/@applications.1/@behavior/@states.0">
+        <states description="simple.cps.app.ClientAppClass7.sm7.s0"/>
+        <states description="simple.cps.app.ClientAppClass7.sm7.s1" outgoing="//@hosts.3/@applications.1/@behavior/@transitions.0 //@hosts.3/@applications.1/@behavior/@transitions.1"/>
+        <states description="simple.cps.app.ClientAppClass7.sm7.s2" outgoing="//@hosts.3/@applications.1/@behavior/@transitions.2 //@hosts.3/@applications.1/@behavior/@transitions.3 //@hosts.3/@applications.1/@behavior/@transitions.4"/>
+        <transitions description="simple.cps.app.ClientAppClass7.sm7.s1.t0" to="//@hosts.3/@applications.1/@behavior/@states.2"/>
+        <transitions description="simple.cps.app.ClientAppClass7.sm7.s1.t1" to="//@hosts.3/@applications.1/@behavior/@states.0"/>
+        <transitions description="simple.cps.app.ClientAppClass7.sm7.s2.t2" to="//@hosts.3/@applications.1/@behavior/@states.0"/>
+        <transitions description="simple.cps.app.ClientAppClass7.sm7.s2.t3" to="//@hosts.3/@applications.1/@behavior/@states.0"/>
+        <transitions description="simple.cps.app.ClientAppClass7.sm7.s2.t4" to="//@hosts.3/@applications.1/@behavior/@states.1"/>
+      </behavior>
+    </applications>
+    <applications id="simple.cps.app.ClientAppClass0.inst0">
+      <behavior description="simple.cps.app.ClientAppClass0.sm0" current="//@hosts.3/@applications.2/@behavior/@states.0">
+        <states description="simple.cps.app.ClientAppClass0.sm0.s0" outgoing="//@hosts.3/@applications.2/@behavior/@transitions.0 //@hosts.3/@applications.2/@behavior/@transitions.1"/>
+        <states description="simple.cps.app.ClientAppClass0.sm0.s1"/>
+        <states description="simple.cps.app.ClientAppClass0.sm0.s2" outgoing="//@hosts.3/@applications.2/@behavior/@transitions.2 //@hosts.3/@applications.2/@behavior/@transitions.3 //@hosts.3/@applications.2/@behavior/@transitions.4"/>
+        <transitions description="simple.cps.app.ClientAppClass0.sm0.s0.t2" to="//@hosts.3/@applications.2/@behavior/@states.2"/>
+        <transitions description="simple.cps.app.ClientAppClass0.sm0.s0.t4" to="//@hosts.3/@applications.2/@behavior/@states.1"/>
+        <transitions description="simple.cps.app.ClientAppClass0.sm0.s2.t0" to="//@hosts.3/@applications.2/@behavior/@states.1"/>
+        <transitions description="simple.cps.app.ClientAppClass0.sm0.s2.t1" to="//@hosts.3/@applications.2/@behavior/@states.1"/>
+        <transitions description="simple.cps.app.ClientAppClass0.sm0.s2.t3" to="//@hosts.3/@applications.2/@behavior/@states.0"/>
+      </behavior>
+    </applications>
+  </hosts>
+  <hosts ip="simple.cps.host.client0.inst3"/>
+  <hosts ip="simple.cps.host.client0.inst4"/>
+  <hosts ip="simple.cps.host.client0.inst5"/>
+  <hosts ip="simple.cps.host.client0.inst6">
+    <applications id="simple.cps.app.ClientAppClass2.inst0">
+      <behavior description="simple.cps.app.ClientAppClass2.sm2" current="//@hosts.7/@applications.0/@behavior/@states.0">
+        <states description="simple.cps.app.ClientAppClass2.sm2.s0" outgoing="//@hosts.7/@applications.0/@behavior/@transitions.0 //@hosts.7/@applications.0/@behavior/@transitions.1 //@hosts.7/@applications.0/@behavior/@transitions.2"/>
+        <states description="simple.cps.app.ClientAppClass2.sm2.s1"/>
+        <states description="simple.cps.app.ClientAppClass2.sm2.s2" outgoing="//@hosts.7/@applications.0/@behavior/@transitions.3 //@hosts.7/@applications.0/@behavior/@transitions.4"/>
+        <transitions description="simple.cps.app.ClientAppClass2.sm2.s0.t1" to="//@hosts.7/@applications.0/@behavior/@states.1"/>
+        <transitions description="simple.cps.app.ClientAppClass2.sm2.s0.t2" to="//@hosts.7/@applications.0/@behavior/@states.2"/>
+        <transitions description="simple.cps.app.ClientAppClass2.sm2.s0.t3" to="//@hosts.7/@applications.0/@behavior/@states.1"/>
+        <transitions description="simple.cps.app.ClientAppClass2.sm2.s2.t0" to="//@hosts.7/@applications.0/@behavior/@states.1"/>
+        <transitions description="simple.cps.app.ClientAppClass2.sm2.s2.t4" to="//@hosts.7/@applications.0/@behavior/@states.0"/>
+      </behavior>
+    </applications>
+    <applications id="simple.cps.app.ClientAppClass3.inst0">
+      <behavior description="simple.cps.app.ClientAppClass3.sm3" current="//@hosts.7/@applications.1/@behavior/@states.0">
+        <states description="simple.cps.app.ClientAppClass3.sm3.s0" outgoing="//@hosts.7/@applications.1/@behavior/@transitions.0"/>
+        <states description="simple.cps.app.ClientAppClass3.sm3.s1" outgoing="//@hosts.7/@applications.1/@behavior/@transitions.1 //@hosts.7/@applications.1/@behavior/@transitions.2"/>
+        <states description="simple.cps.app.ClientAppClass3.sm3.s2" outgoing="//@hosts.7/@applications.1/@behavior/@transitions.3 //@hosts.7/@applications.1/@behavior/@transitions.4"/>
+        <transitions description="simple.cps.app.ClientAppClass3.sm3.s0.t3" to="//@hosts.7/@applications.1/@behavior/@states.2"/>
+        <transitions description="simple.cps.app.ClientAppClass3.sm3.s1.t2" to="//@hosts.7/@applications.1/@behavior/@states.2"/>
+        <transitions description="simple.cps.app.ClientAppClass3.sm3.s1.t4" to="//@hosts.7/@applications.1/@behavior/@states.0"/>
+        <transitions description="simple.cps.app.ClientAppClass3.sm3.s2.t0" to="//@hosts.7/@applications.1/@behavior/@states.0"/>
+        <transitions description="simple.cps.app.ClientAppClass3.sm3.s2.t1" to="//@hosts.7/@applications.1/@behavior/@states.0"/>
+      </behavior>
+    </applications>
+  </hosts>
+  <hosts ip="simple.cps.host.client0.inst7">
+    <applications id="simple.cps.app.ClientAppClass8.inst0">
+      <behavior description="simple.cps.app.ClientAppClass8.sm8" current="//@hosts.8/@applications.0/@behavior/@states.0">
+        <states description="simple.cps.app.ClientAppClass8.sm8.s0" outgoing="//@hosts.8/@applications.0/@behavior/@transitions.0"/>
+        <states description="simple.cps.app.ClientAppClass8.sm8.s1" outgoing="//@hosts.8/@applications.0/@behavior/@transitions.1 //@hosts.8/@applications.0/@behavior/@transitions.2"/>
+        <states description="simple.cps.app.ClientAppClass8.sm8.s2" outgoing="//@hosts.8/@applications.0/@behavior/@transitions.3 //@hosts.8/@applications.0/@behavior/@transitions.4"/>
+        <transitions description="simple.cps.app.ClientAppClass8.sm8.s0.t0" to="//@hosts.8/@applications.0/@behavior/@states.2"/>
+        <transitions description="simple.cps.app.ClientAppClass8.sm8.s1.t1" to="//@hosts.8/@applications.0/@behavior/@states.2"/>
+        <transitions description="simple.cps.app.ClientAppClass8.sm8.s1.t3" to="//@hosts.8/@applications.0/@behavior/@states.0"/>
+        <transitions description="simple.cps.app.ClientAppClass8.sm8.s2.t2" to="//@hosts.8/@applications.0/@behavior/@states.0"/>
+        <transitions description="simple.cps.app.ClientAppClass8.sm8.s2.t4" to="//@hosts.8/@applications.0/@behavior/@states.0"/>
+      </behavior>
+    </applications>
+  </hosts>
+  <hosts ip="simple.cps.host.client0.inst8"/>
   <hosts ip="simple.cps.host.client0.inst9"/>
 </deployment:Deployment>

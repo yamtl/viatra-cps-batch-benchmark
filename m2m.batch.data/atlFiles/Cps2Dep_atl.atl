@@ -32,26 +32,29 @@ helper def: getSignalId(action: String) : String =
 	contents.at(2).trim();
 
 helper context CPS!Transition def: belongsToApplicationType(appTypeId : String) : Boolean =
-	let appType : CPS!ApplicationType = self.refImmediateComposite().refImmediateComposite().refImmediateComposite() in
+	let appType : CPS!ApplicationType = self.eContainer().eContainer().eContainer() in
 	appType.identifier = appTypeId;
 
 helper context CPS!Transition def: applicationInstance : CPS!ApplicationInstance =
-	let appType : CPS!ApplicationType = self.refImmediateComposite().refImmediateComposite().refImmediateComposite() in
+	let appType : CPS!ApplicationType = self.eContainer().eContainer().eContainer() in
 	appType.instances.at(1);
 
 helper context CPS!HostInstance def: reaches(server: CPS!HostInstance, visited : Set(String)) : Boolean =
-	if (not visited->exists(id | self.identifier=id)) then
-		if (self.communicateWith->collect(bridge| bridge.identifier)->exists(id | server.identifier=id)) then
-			true
-		else
-			let updatedVisited: Set(String) = visited.including(self.identifier) in
-			self.communicateWith->exists(bridge|
-				bridge.reaches(server, updatedVisited)
-			)
-		endif
-	else 
-		false
-	endif;
+	self = server
+	or
+	self.communicateWith->includes(server);
+---	if (not visited->exists(id | self.identifier=id)) then
+---		if (self.communicateWith->collect(bridge| bridge.identifier)->exists(id | server.identifier=id)) then
+---			true
+---		else
+---			let updatedVisited: Set(String) = visited.including(self.identifier) in
+---			self.communicateWith->exists(bridge|
+---				bridge.reaches(server, updatedVisited)
+---			)
+---		endif
+---	else 
+---		false
+---	endif;
 
 rule CyberPhysicalSystem_2_Deployment {
 	from cps : CPS!CyberPhysicalSystem 

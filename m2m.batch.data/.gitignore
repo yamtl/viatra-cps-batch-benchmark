@@ -5,3 +5,4 @@
 /*.csv
 /experimental-results-incr/
 /runBenchmarksIncremental.sh
+/test.sh
