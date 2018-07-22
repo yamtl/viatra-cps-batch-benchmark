@@ -2,8 +2,6 @@ package experiments.yamtl
 
 import cps2dep.yamtl.Cps2DepYAMTL
 import experiments.utils.FullBenchmarkRunner
-import java.util.List
-import org.eclipse.emf.ecore.EObject
 import org.eclipse.emf.ecore.resource.Resource
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl
 import org.eclipse.viatra.examples.cps.cyberPhysicalSystem.CyberPhysicalSystem
@@ -15,7 +13,6 @@ import org.eclipse.viatra.examples.cps.traceability.TraceabilityPackage
 class Cps2DepRunner_ClientServer_YAMTL_full extends FullBenchmarkRunner {
 
 	var Cps2DepYAMTL xform 
-	var List<EObject> rootObjects 
     
 	override getIdentifier() {
 		"cps2dep_clientServer_yamtl"
@@ -73,8 +70,7 @@ class Cps2DepRunner_ClientServer_YAMTL_full extends FullBenchmarkRunner {
 	}
 	
 	override doDispose() {
-		xform = null
-		rootObjects = null
+		xform.reset()
 	}
 
 	///////////////////////////////////////////////////////////////////////////////////////////

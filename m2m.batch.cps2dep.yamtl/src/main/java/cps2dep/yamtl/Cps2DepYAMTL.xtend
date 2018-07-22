@@ -47,22 +47,21 @@ class Cps2DepYAMTL extends YAMTLModule {
 				
 		helperStore( newArrayList(
 			new Helper('waitingTransitions') [
-					val Map<String,List<Transition>> reachableWaitForTransitionsMap = newHashMap	 
-					CPS.transition.allInstances.forEach[ transition |
-						val targetTransition = transition as Transition
-						if (targetTransition.action?.isWaitSignal) {
-							val signalId = targetTransition.action.waitTransitionSignalId
-							val list = reachableWaitForTransitionsMap.get(signalId)
-							if (list === null) {
-								reachableWaitForTransitionsMap.put(targetTransition.action.waitTransitionSignalId, newArrayList(targetTransition))
-							} else {
-								list.add(targetTransition)
-							}
-						} 
-					]
-					reachableWaitForTransitionsMap
+				val Map<String,List<Transition>> reachableWaitForTransitionsMap = newHashMap	 
+				CPS.transition.allInstances.forEach[ transition |
+					val targetTransition = transition as Transition
+					if (targetTransition.action?.isWaitSignal) {
+						val signalId = targetTransition.action.waitTransitionSignalId
+						val list = reachableWaitForTransitionsMap.get(signalId)
+						if (list === null) {
+							reachableWaitForTransitionsMap.put(targetTransition.action.waitTransitionSignalId, newArrayList(targetTransition))
+						} else {
+							list.add(targetTransition)
+						}
+					} 
 				]
-				.build()
+				reachableWaitForTransitionsMap
+			].build()
 		))
 		
 		ruleStore( newArrayList(
@@ -200,28 +199,28 @@ class Cps2DepYAMTL extends YAMTLModule {
 					]).build()
 				.out('out', DEP.behaviorTransition, 
 					[ 
-						val transition = 'transition'.fetch as Transition
+						val sendingTransition = 'transition'.fetch as Transition
 						
 						val waitingTransitions = 'waitingTransitions'.fetch as Map<String,List<Transition>> 
-						val waitingTransitionsList = waitingTransitions.get(transition.action.signalId)
+						val waitingTransitionsList = waitingTransitions.get(sendingTransition.action.signalId)
 						
 						// triggers have to be processed at the end
 						// because we need to access generated behaviorTransitions 
 						// (in case several behaviors were obtained from the same state machine)
 						if (waitingTransitionsList!==null) {
-							for (triggeredTransition: waitingTransitionsList) {
-								if (triggeredTransition.belongsToApplicationType(transition.action.appTypeId)) {
+							for (receivingTransition: waitingTransitionsList) {
+								if (receivingTransition.belongsToApplicationType(sendingTransition.action.appTypeId)) {
 								
-									val list = transitionToBTransitionList.get(transition)
+									val sendingBTransitionList = transitionToBTransitionList.get(sendingTransition)
+									val receivingBTransitionList = transitionToBTransitionList.get(receivingTransition)
 									
-									if (list!==null) {
-										list.forEach[ senderBehaviorTransition |
-											val bTransitionList = transitionToBTransitionList.get(triggeredTransition)
+									if (sendingBTransitionList!==null) {
+										sendingBTransitionList.forEach[ senderBehaviorTransition |
 			
-											if (bTransitionList !== null) {
+											if (receivingBTransitionList !== null) {
 												val reachableTransitionList = newArrayList
 				
-												for (receiverBehaviorTransition: bTransitionList) {
+												for (receiverBehaviorTransition: receivingBTransitionList) {
 													val senderDepApp = senderBehaviorTransition.eContainer.eContainer as DeploymentApplication
 													val senderAppIntance = depAppToAppInstance.get(senderDepApp)
 													
@@ -398,7 +397,7 @@ class Cps2DepYAMTL extends YAMTLModule {
 			list.add(db)
 		}
 	}
-		 
+	
 	def void fetchCPS2DepTraces(CPSToDeployment cps2dep) {
 		val Set<String> visitedStateMachineIds = newHashSet
 		val Set<String> visitedStateIds = newHashSet

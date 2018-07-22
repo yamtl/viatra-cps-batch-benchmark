@@ -20547,4 +20547,201 @@ CPS2DepTest - START TEST: type:  ID: sendWithSingleWait
 [Jul/08 21:16:52] CPS2DepTest - START TEST: type:  ID: removeSourceState
 [Jul/08 21:16:52] CPS2DepTest - Removing source state from model
 [Jul/08 21:16:52] CPS2DepTest - END TEST: type:  ID: removeSourceState
-[Jul/08 21:16:52] 
+[Jul/08 21:16:52] CPS2DepTest - START TEST: type:  ID: changeStateMachineId
+[Jul/19 15:44:05] CPS2DepTest - Changing state machine ID.
+[Jul/19 15:44:05] CPS2DepTest - END TEST: type:  ID: changeStateMachineId
+[Jul/19 15:44:05] CPS2DepTest - START TEST: type:  ID: moveApplicationInstance
+[Jul/19 15:44:05] CPS2DepTest - Moving application instance
+[Jul/19 15:44:05] CPS2DepTest - END TEST: type:  ID: moveApplicationInstance
+[Jul/19 15:44:05] CPS2DepTest - START TEST: type:  ID: removeStateMachine
+[Jul/19 15:44:05] CPS2DepTest - Removing state machine from app type.
+[Jul/19 15:44:05] CPS2DepTest - END TEST: type:  ID: removeStateMachine
+[Jul/19 15:44:05] CPS2DepTest - START TEST: type:  ID: addApplicationInstance
+[Jul/19 15:44:05] CPS2DepTest - END TEST: type:  ID: addApplicationInstance
+[Jul/19 15:44:05] CPS2DepTest - START TEST: type:  ID: removeApplicationInstance
+[Jul/19 15:44:05] CPS2DepTest - Removing instance from type
+[Jul/19 15:44:05] CPS2DepTest - END TEST: type:  ID: removeApplicationInstance
+[Jul/19 15:44:05] CPS2DepTest - START TEST: type:  ID: singleStateMachine
+[Jul/19 15:44:05] CPS2DepTest - END TEST: type:  ID: singleStateMachine
+[Jul/19 15:44:05] CPS2DepTest - START TEST: type:  ID: removeHostInstanceOfBehavior
+[Jul/19 15:44:05] CPS2DepTest - Deleting host instance
+[Jul/19 15:44:05] CPS2DepTest - END TEST: type:  ID: removeHostInstanceOfBehavior
+[Jul/19 15:44:05] CPS2DepTest - START TEST: type:  ID: stateMachineIncremental
+[Jul/19 15:44:05] CPS2DepTest - END TEST: type:  ID: stateMachineIncremental
+[Jul/19 15:44:05] CPS2DepTest - START TEST: type:  ID: moveStateMachine
+[Jul/19 15:44:05] CPS2DepTest - Moving state machine
+[Jul/19 15:44:05] CPS2DepTest - END TEST: type:  ID: moveStateMachine
+[Jul/19 15:44:05] CPS2DepTest - START TEST: type:  ID: nullCPS
+[Jul/19 15:44:05] CPS2DepTest - START TEST: type:  ID: emptyModel
+[Jul/19 15:44:05] CPS2DepTest - END TEST: type:  ID: emptyModel
+[Jul/19 15:44:05] CPS2DepTest - START TEST: type:  ID: nullDeployment
+[Jul/19 15:44:05] CPS2DepTest - START TEST: type:  ID: noMapping
+[Jul/19 15:44:05] CPS2DepTest - START TEST: type:  ID: removeInitialState
+[Jul/19 15:44:06] CPS2DepTest - END TEST: type:  ID: removeInitialState
+[Jul/19 15:44:06] CPS2DepTest - START TEST: type:  ID: addApplicationInstanceOfState
+[Jul/19 15:44:06] CPS2DepTest - END TEST: type:  ID: addApplicationInstanceOfState
+[Jul/19 15:44:06] CPS2DepTest - START TEST: type:  ID: singleState
+[Jul/19 15:44:06] CPS2DepTest - END TEST: type:  ID: singleState
+[Jul/19 15:44:06] CPS2DepTest - START TEST: type:  ID: moveStateMachine
+[Jul/19 15:44:06] CPS2DepTest - Moving state machine
+[Jul/19 15:44:06] CPS2DepTest - END TEST: type:  ID: moveStateMachine
+[Jul/19 15:44:06] CPS2DepTest - START TEST: type:  ID: changeInitialState
+[Jul/19 15:44:06] CPS2DepTest - END TEST: type:  ID: changeInitialState
+[Jul/19 15:44:06] CPS2DepTest - START TEST: type:  ID: initialState
+[Jul/19 15:44:06] CPS2DepTest - END TEST: type:  ID: initialState
+[Jul/19 15:44:06] CPS2DepTest - START TEST: type:  ID: removeState
+[Jul/19 15:44:06] CPS2DepTest - END TEST: type:  ID: removeState
+[Jul/19 15:44:06] CPS2DepTest - START TEST: type:  ID: removeHostInstanceOfState
+[Jul/19 15:44:06] CPS2DepTest - Deleting host instance
+[Jul/19 15:44:06] CPS2DepTest - END TEST: type:  ID: removeHostInstanceOfState
+[Jul/19 15:44:06] CPS2DepTest - START TEST: type:  ID: removeStateMachineOfState
+[Jul/19 15:44:06] CPS2DepTest - Removing state machine from app type.
+[Jul/19 15:44:06] CPS2DepTest - END TEST: type:  ID: removeStateMachineOfState
+[Jul/19 15:44:06] CPS2DepTest - START TEST: type:  ID: deleteApplicationInstanceOfState
+[Jul/19 15:44:06] CPS2DepTest - Removing instance from type
+[Jul/19 15:44:06] CPS2DepTest - END TEST: type:  ID: deleteApplicationInstanceOfState
+[Jul/19 15:44:06] CPS2DepTest - START TEST: type:  ID: initialStatesMultipleAppInstance
+[Jul/19 15:44:06] CPS2DepTest - Adding new application instance
+[Jul/19 15:44:06] CPS2DepTest - END TEST: type:  ID: initialStatesMultipleAppInstance
+[Jul/19 15:44:06] CPS2DepTest - START TEST: type:  ID: moveApplicationInstance
+[Jul/19 15:44:06] CPS2DepTest - Moving application instance
+[Jul/19 15:44:06] CPS2DepTest - END TEST: type:  ID: moveApplicationInstance
+[Jul/19 15:44:06] CPS2DepTest - START TEST: type:  ID: changeStateId
+[Jul/19 15:44:06] CPS2DepTest - Changing state  ID.
+[Jul/19 15:44:06] CPS2DepTest - END TEST: type:  ID: changeStateId
+[Jul/19 15:44:06] CPS2DepTest - START TEST: type:  ID: stateIncremental
+[Jul/19 15:44:06] CPS2DepTest - END TEST: type:  ID: stateIncremental
+[Jul/19 15:44:06] CPS2DepTest - START TEST: type:  ID: removeApplicationFromType
+[Jul/19 15:44:06] CPS2DepTest - Removing application instance from model
+[Jul/19 15:44:06] CPS2DepTest - END TEST: type:  ID: removeApplicationFromType
+[Jul/19 15:44:06] CPS2DepTest - START TEST: type:  ID: applicationIncremental
+[Jul/19 15:44:06] CPS2DepTest - END TEST: type:  ID: applicationIncremental
+[Jul/19 15:44:06] CPS2DepTest - START TEST: type:  ID: singleApplication
+[Jul/19 15:44:06] CPS2DepTest - END TEST: type:  ID: singleApplication
+[Jul/19 15:44:06] CPS2DepTest - START TEST: type:  ID: removeHostInstanceOfApplication
+[Jul/19 15:44:06] CPS2DepTest - Deleting host instance
+[Jul/19 15:44:06] CPS2DepTest - END TEST: type:  ID: removeHostInstanceOfApplication
+[Jul/19 15:44:06] CPS2DepTest - START TEST: type:  ID: reallocateApplication
+[Jul/19 15:44:06] CPS2DepTest - Reallocating application instance to host2
+[Jul/19 15:44:06] CPS2DepTest - END TEST: type:  ID: reallocateApplication
+[Jul/19 15:44:06] CPS2DepTest - START TEST: type:  ID: changeApplicationId
+[Jul/19 15:44:06] CPS2DepTest - Changing host IP
+[Jul/19 15:44:06] CPS2DepTest - END TEST: type:  ID: changeApplicationId
+[Jul/19 15:44:06] CPS2DepTest - START TEST: type:  ID: deallocateApplication
+[Jul/19 15:44:06] CPS2DepTest - Removing application instance from model
+[Jul/19 15:44:06] CPS2DepTest - END TEST: type:  ID: deallocateApplication
+[Jul/19 15:44:06] CPS2DepTest - START TEST: type:  ID: hostIncremental
+[Jul/19 15:44:06] CPS2DepTest - END TEST: type:  ID: hostIncremental
+[Jul/19 15:44:06] CPS2DepTest - START TEST: type:  ID: changeHostIp
+[Jul/19 15:44:06] CPS2DepTest - Changing host IP
+[Jul/19 15:44:06] CPS2DepTest - END TEST: type:  ID: changeHostIp
+[Jul/19 15:44:06] CPS2DepTest - START TEST: type:  ID: singleHost
+[Jul/19 15:44:06] CPS2DepTest - END TEST: type:  ID: singleHost
+[Jul/19 15:44:06] CPS2DepTest - START TEST: type:  ID: removeHost
+[Jul/19 15:44:06] CPS2DepTest - Removing host instance from model
+[Jul/19 15:44:06] CPS2DepTest - END TEST: type:  ID: removeHost
+[Jul/19 15:44:06] CPS2DepTest - START TEST: type:  ID: addHostInstanceOfSend
+[Jul/19 15:44:07] CPS2DepTest - Adding host instance for send
+[Jul/19 15:44:07] CPS2DepTest - END TEST: type:  ID: addHostInstanceOfSend
+[Jul/19 15:44:07] CPS2DepTest - START TEST: type:  ID: waitWithoutSend
+[Jul/19 15:44:07] CPS2DepTest - END TEST: type:  ID: waitWithoutSend
+[Jul/19 15:44:07] CPS2DepTest - START TEST: type:  ID: changeWaitActionOfTransition
+[Jul/19 15:44:07] CPS2DepTest - Changing wait action
+[Jul/19 15:44:07] CPS2DepTest - END TEST: type:  ID: changeWaitActionOfTransition
+[Jul/19 15:44:07] CPS2DepTest - START TEST: type:  ID: moveHostInstanceOfSend
+[Jul/19 15:44:07] CPS2DepTest - Moving host instance for send
+[Jul/19 15:44:07] CPS2DepTest - END TEST: type:  ID: moveHostInstanceOfSend
+[Jul/19 15:44:07] CPS2DepTest - START TEST: type:  ID: moveHostInstanceOfWait
+[Jul/19 15:44:07] CPS2DepTest - Moving host instance for wait
+[Jul/19 15:44:07] CPS2DepTest - END TEST: type:  ID: moveHostInstanceOfWait
+[Jul/19 15:44:07] CPS2DepTest - START TEST: type:  ID: addecondWaitTransition
+[Jul/19 15:44:07] CPS2DepTest - Adding second wait transition
+[Jul/19 15:44:07] CPS2DepTest - END TEST: type:  ID: addecondWaitTransition
+[Jul/19 15:44:07] CPS2DepTest - START TEST: type:  ID: removeApplicationInstanceOfSend
+[Jul/19 15:44:07] CPS2DepTest - Removing application instance for send
+[Jul/19 15:44:07] CPS2DepTest - END TEST: type:  ID: removeApplicationInstanceOfSend
+[Jul/19 15:44:07] CPS2DepTest - START TEST: type:  ID: removeApplicationInstanceOfWait
+[Jul/19 15:44:07] CPS2DepTest - Removing application instance for wait
+[Jul/19 15:44:07] CPS2DepTest - END TEST: type:  ID: removeApplicationInstanceOfWait
+[Jul/19 15:44:07] CPS2DepTest - START TEST: type:  ID: removeWaitTransitionFromMultiple
+[Jul/19 15:44:07] CPS2DepTest - Removing one of two wait transitions
+[Jul/19 15:44:07] CPS2DepTest - END TEST: type:  ID: removeWaitTransitionFromMultiple
+[Jul/19 15:44:07] CPS2DepTest - START TEST: type:  ID: sendWithoutWait
+[Jul/19 15:44:07] CPS2DepTest - END TEST: type:  ID: sendWithoutWait
+[Jul/19 15:44:07] CPS2DepTest - START TEST: type:  ID: removeLastWaitTransition
+[Jul/19 15:44:07] CPS2DepTest - Removing wait transition
+[Jul/19 15:44:07] CPS2DepTest - END TEST: type:  ID: removeLastWaitTransition
+[Jul/19 15:44:07] CPS2DepTest - START TEST: type:  ID: addFirstWaitTransition
+[Jul/19 15:44:07] CPS2DepTest - Adding wait transition
+[Jul/19 15:44:07] CPS2DepTest - END TEST: type:  ID: addFirstWaitTransition
+[Jul/19 15:44:07] CPS2DepTest - START TEST: type:  ID: sendWithMultipleWait
+[Jul/19 15:44:07] CPS2DepTest - END TEST: type:  ID: sendWithMultipleWait
+[Jul/19 15:44:07] CPS2DepTest - START TEST: type:  ID: addHostCommunication
+[Jul/19 15:44:07] CPS2DepTest - Adding host communication
+[Jul/19 15:44:07] CPS2DepTest - END TEST: type:  ID: addHostCommunication
+[Jul/19 15:44:07] CPS2DepTest - START TEST: type:  ID: moveApplicationInstanceOfSend
+[Jul/19 15:44:07] CPS2DepTest - Moving application instance for send
+[Jul/19 15:44:07] CPS2DepTest - END TEST: type:  ID: moveApplicationInstanceOfSend
+[Jul/19 15:44:07] CPS2DepTest - START TEST: type:  ID: moveApplicationInstanceOfWait
+[Jul/19 15:44:07] CPS2DepTest - Moving application instance for wait
+[Jul/19 15:44:07] CPS2DepTest - END TEST: type:  ID: moveApplicationInstanceOfWait
+[Jul/19 15:44:07] CPS2DepTest - START TEST: type:  ID: removeHostInstanceOfSend
+[Jul/19 15:44:07] CPS2DepTest - Removing host instance for send
+[Jul/19 15:44:07] CPS2DepTest - END TEST: type:  ID: removeHostInstanceOfSend
+[Jul/19 15:44:07] CPS2DepTest - START TEST: type:  ID: removeHostInstanceOfWait
+[Jul/19 15:44:07] CPS2DepTest - Removing host instance for wait
+[Jul/19 15:44:07] CPS2DepTest - END TEST: type:  ID: removeHostInstanceOfWait
+[Jul/19 15:44:07] CPS2DepTest - START TEST: type:  ID: removeSendActionOfTransition
+[Jul/19 15:44:07] CPS2DepTest - Removing send action
+[Jul/19 15:44:07] CPS2DepTest - END TEST: type:  ID: removeSendActionOfTransition
+[Jul/19 15:44:07] CPS2DepTest - START TEST: type:  ID: multipleWaitingAppInstancesOnlyOneCanCommunicate
+[Jul/19 15:44:07] CPS2DepTest - END TEST: type:  ID: multipleWaitingAppInstancesOnlyOneCanCommunicate
+[Jul/19 15:44:07] CPS2DepTest - START TEST: type:  ID: addApplicationInstanceOfSend
+[Jul/19 15:44:07] CPS2DepTest - Adding application instance for send
+[Jul/19 15:44:07] CPS2DepTest - END TEST: type:  ID: addApplicationInstanceOfSend
+[Jul/19 15:44:07] CPS2DepTest - START TEST: type:  ID: changeSendActionOfTransition
+[Jul/19 15:44:07] CPS2DepTest - Changing send action
+[Jul/19 15:44:07] CPS2DepTest - END TEST: type:  ID: changeSendActionOfTransition
+[Jul/19 15:44:07] CPS2DepTest - START TEST: type:  ID: sendWithSingleWait
+[Jul/19 15:44:07] CPS2DepTest - END TEST: type:  ID: sendWithSingleWait
+[Jul/19 15:44:07] CPS2DepTest - START TEST: type:  ID: removeHostCommunication
+[Jul/19 15:44:07] CPS2DepTest - Removing host communication
+[Jul/19 15:44:07] CPS2DepTest - END TEST: type:  ID: removeHostCommunication
+[Jul/19 15:44:07] CPS2DepTest - START TEST: type:  ID: moveApplicationInstanceOfTransition
+[Jul/19 15:44:07] CPS2DepTest - Moving application instance
+[Jul/19 15:44:07] CPS2DepTest - END TEST: type:  ID: moveApplicationInstanceOfTransition
+[Jul/19 15:44:07] CPS2DepTest - START TEST: type:  ID: changeTransitionId
+[Jul/19 15:44:08] CPS2DepTest - Changing transition target
+[Jul/19 15:44:08] CPS2DepTest - END TEST: type:  ID: changeTransitionId
+[Jul/19 15:44:08] CPS2DepTest - START TEST: type:  ID: transitionIncremental
+[Jul/19 15:44:08] CPS2DepTest - END TEST: type:  ID: transitionIncremental
+[Jul/19 15:44:08] CPS2DepTest - START TEST: type:  ID: removeHostInstanceOfTransition
+[Jul/19 15:44:08] CPS2DepTest - Deleting host instance
+[Jul/19 15:44:08] CPS2DepTest - END TEST: type:  ID: removeHostInstanceOfTransition
+[Jul/19 15:44:08] CPS2DepTest - START TEST: type:  ID: moveTransitionInsideStateMachine
+[Jul/19 15:44:08] CPS2DepTest - Moving transition to other state
+[Jul/19 15:44:08] CPS2DepTest - END TEST: type:  ID: moveTransitionInsideStateMachine
+[Jul/19 15:44:08] CPS2DepTest - START TEST: type:  ID: singleTransitionWithoutTarget
+[Jul/19 15:44:08] CPS2DepTest - END TEST: type:  ID: singleTransitionWithoutTarget
+[Jul/19 15:44:08] CPS2DepTest - START TEST: type:  ID: removeTransition
+[Jul/19 15:44:08] CPS2DepTest - Removing transition from model
+[Jul/19 15:44:08] CPS2DepTest - END TEST: type:  ID: removeTransition
+[Jul/19 15:44:08] CPS2DepTest - START TEST: type:  ID: removeTargetState
+[Jul/19 15:44:08] CPS2DepTest - Removing target state from model
+[Jul/19 15:44:08] CPS2DepTest - END TEST: type:  ID: removeTargetState
+[Jul/19 15:44:08] CPS2DepTest - START TEST: type:  ID: addApplicationInstanceOfTransition
+[Jul/19 15:44:08] CPS2DepTest - END TEST: type:  ID: addApplicationInstanceOfTransition
+[Jul/19 15:44:08] CPS2DepTest - START TEST: type:  ID: changeTransitionId
+[Jul/19 15:44:08] CPS2DepTest - Changing transition ID
+[Jul/19 15:44:08] CPS2DepTest - END TEST: type:  ID: changeTransitionId
+[Jul/19 15:44:08] CPS2DepTest - START TEST: type:  ID: removeApplicationInstanceOfTransition
+[Jul/19 15:44:08] CPS2DepTest - Removing instance from type
+[Jul/19 15:44:08] CPS2DepTest - END TEST: type:  ID: removeApplicationInstanceOfTransition
+[Jul/19 15:44:08] CPS2DepTest - START TEST: type:  ID: multipleApplicationInstanceOfTransition
+[Jul/19 15:44:08] CPS2DepTest - END TEST: type:  ID: multipleApplicationInstanceOfTransition
+[Jul/19 15:44:08] CPS2DepTest - START TEST: type:  ID: singleTransitionWithTargetState
+[Jul/19 15:44:08] CPS2DepTest - END TEST: type:  ID: singleTransitionWithTargetState
+[Jul/19 15:44:08] CPS2DepTest - START TEST: type:  ID: removeSourceState
+[Jul/19 15:44:08] CPS2DepTest - Removing source state from model
+[Jul/19 15:44:08] CPS2DepTest - END TEST: type:  ID: removeSourceState
+[Jul/19 15:44:08] 

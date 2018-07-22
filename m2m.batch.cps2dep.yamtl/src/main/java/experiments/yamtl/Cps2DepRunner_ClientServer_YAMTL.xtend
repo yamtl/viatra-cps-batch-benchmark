@@ -26,7 +26,7 @@ class Cps2DepRunner_ClientServer_YAMTL extends BenchmarkRunner {
 		#[1, 1, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768]
 //		#[1, 1, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192]
 //		#[1, 1, 8]
-//		#[128]
+//		#[1]
 	}
     
 	def static void main(String[] args) {
@@ -76,7 +76,7 @@ class Cps2DepRunner_ClientServer_YAMTL extends BenchmarkRunner {
 	}
 	
 	override doDispose() {
-		xform = null
+		xform.reset()
 		rootObjects = null
 	}
 
